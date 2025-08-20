@@ -3,3 +3,29 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+.menu {
+  display: flex;
+}
+
+.menu-utils {
+  display: flex;
+  margin-right: auto;
+  list-style-type: none;
+}
+
+.menu-utils a {
+  display: block;
+  padding: 1em 1em;
+}
+
+.menu-nav {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+.menu-nav a {
+  display: block;
+  padding: 1em 1em;
+}
