@@ -2,12 +2,8 @@ html {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-weight: 400;
 }
-/* .zen-kaku-gothic-new-regular { */
-/*   font-family: "Zen Kaku Gothic New", sans-serif; */
-/*   font-weight: 400; */
-/*   font-style: normal; */
-/* } */
 
 .menu {
   display: flex;
@@ -39,24 +35,40 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 .profile-pic {
-  width: 30%;
-  min-width: 300px;
-  min-height: 300px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  /* TODO: resize using media checks for mobile (min width) */
   border-radius: 50%;
   display: block;
+  margin-left: 20em;
 }
 
-.desc-container {
+.description-column {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* cross axis */
+  justify-content: center; /* main axis */
 }
 
 .name {
-  font-size: 4em;
+  display: block;
+  font-size: 6em;
+  height: 0.7em;
+}
+
+.major {
+  display: block;
+  font-size: 2em;
+  height: 1em;
+}
+
+.intro {
+  display: block;
+  width: 30%;
+  font-weight: 400;
 }
