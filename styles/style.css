@@ -97,4 +97,7 @@ html {
 
 .footer {
   text-align: center;
+  align-self: center;
+  position: fixed;
+  bottom: 0em;
 }
