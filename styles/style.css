@@ -4,6 +4,7 @@ html {
   font-style: normal;
   font-weight: 400;
   color: #54433a;
+  /* background-color: #f1f1f1; */
 }
 
 /* accessibility */
@@ -64,15 +65,36 @@ html {
 
 .name {
   font-size: 6em;
-  height: 0.7em;
+  height: 0.5em;
 }
 
 .subheading {
-  font-size: 2.5em;
+  color: #bc5c00;
+  font-size: 4em;
   height: 1em;
 }
 
 .intro {
   font-weight: 400;
-  width: 50%;
+  width: 60%;
+}
+
+.main-content {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.skill-sections {
+  margin-top: 10em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.skills h2 {
+  font-size: 2em;
+}
+
+.footer {
+  text-align: center;
 }
