@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-US">
   <head>
-    <title>Vy Nguyen</title>
+    <title>Vy Nguyen's Website</title>
     <meta author="Vy Nguyen" content="Vy's Personal Website" />
     <meta
       name="description"
@@ -20,27 +20,18 @@
     <meta property="og:url" content="https://vyrnguyen.github.io" />
     <meta
       property="og:image"
-      content="https://vyrnguyen/vyrnguyen.github.io/images/favicon/favicon.ico"
+      content="https://vyrnguyen/vyrnguyen.github.io/images/favicon.ico"
     />
     <meta
       property="og:description"
-      content="Hi! I'm Vy, a recent computer science
-    graduate from UC Berkeley aspiring to be a software engineer. Visit
-    my website to learn more about who I am, read the latest on my tech blog,
-    or explore around!"
+      content="Hi! I'm Vy, a computer science graduate from UC Berkeley
+      aspiring to be a software engineer. Check out my portfolio here!"
     />
 
     <!-- References -->
-    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="/scripts/main.js" defer></script>
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
-    <!-- <link -->
-    <!--   href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" -->
-    <!--   rel="stylesheet" -->
-    <!-- /> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,44 +42,60 @@
   </head>
 
   <body>
-    <nav class="menu">
-      <ul class="menu-utils">
-        <li><a href="#">light</a></li>
-        <li><a href="#">sound</a></li>
-      </ul>
-
-      <ul class="menu-nav">
-        <li><a href="#">about</a></li>
-        <li><a href="#">projects</a></li>
-        <li><a href="#">experience</a></li>
-        <li><a href="#">skills</a></li>
-        <li><a href="#">contact</a></li>
+    <nav>
+      <ul class="menu-items">
+        <li>
+          <button
+            aria-label="Toggle Theme (light)"
+            name="Toggle Theme (light)"
+            type="button"
+          >
+            <img aria-hidden="true" alt="Sun" src="images/menu-icons/sun.png" />
+            <p class="visually-hidden">Toggle Theme (light)</p>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Toggle SFX (off)"
+            name="Toggle SFX (off)"
+            type="button"
+          >
+            <img
+              aria-hidden="true"
+              alt="SFX Off"
+              src="images/menu-icons/sfx_off_light.png"
+            />
+            <p class="visually-hidden">Toggle SFX (off)</p>
+          </button>
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1rAelepuGugXFsMSFAhbnN2VphN5-IZ3nkJe5MN3Ln9I/edit?usp=sharing"
+            target="_blank"
+            title="Open Vy's resume in Google Docs (new tab)"
+          >
+            resume
+          </a>
+        </li>
       </ul>
     </nav>
 
     <header class="about">
       <img
-        class="profile-pic"
-        src="images/profile-picture.JPG"
+        aria-hidden="true"
+        src="images/profile-picture.png"
         alt="Vy Nguyen's profile picture; it portrays a girl with straight brown bangs
         wearing a pair of glasses. She is facing forward from the shoulder-up."
+        class="profile-pic"
       />
       <div class="description-column">
         <h1 class="name">Vy Nguyen</h1>
-        <h2 class="major">CS @ UC Berkeley</h2>
+        <h2 class="subheading">Projects</h2>
         <h4 class="intro">
-          Hi! I'm Vy, a fresh graduate deeply interested in software
-          engineering, algorithms, and computer architecture! I also enjoy
-          designing websites, teaching, and applying my skills to support
-          underrepresented groups.
+          Hi! I'm Vy, a computer science graduate from UC Berkeley passionate
+          about software engineering, algorithms, and OSes. I also enjoy
+          designing video games and teaching!
         </h4>
-        <a
-          href="https://docs.google.com/document/d/1rAelepuGugXFsMSFAhbnN2VphN5-IZ3nkJe5MN3Ln9I/edit?usp=sharing"
-          target="_blank"
-          title="View Vy Nguyen's resume on Google Docs"
-        >
-          Resume (opens in separate tab)
-        </a>
       </div>
     </header>
   </body>
