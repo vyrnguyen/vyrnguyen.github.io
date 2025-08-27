@@ -4,8 +4,14 @@ html {
   font-style: normal;
   font-weight: 400;
   color: #54433a;
-  /* background-color: #f1f1f1; */
 }
+
+/* .roboto-mono-section { */
+/*   font-family: "Roboto Mono", monospace; */
+/*   font-optical-sizing: auto; */
+/*   font-style: normal; */
+/*   font-weight: 500; */
+/* } */
 
 /* accessibility */
 .visually-hidden {
@@ -85,19 +91,30 @@ html {
 }
 
 .skill-sections {
-  margin-top: 10em;
+  margin-top: 15em;
   display: flex;
+  flex-grow: 1;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
 
 .skills h2 {
-  font-size: 2em;
+  text-align: left;
+  font-size: 1.5em;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.skills p {
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer {
-  text-align: center;
   align-self: center;
-  position: fixed;
-  bottom: 0em;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
