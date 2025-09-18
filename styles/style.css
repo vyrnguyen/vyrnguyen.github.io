@@ -60,10 +60,10 @@ body {
 
 .profile-pic {
   width: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 500px;
+  max-height: 500px;
   /* TODO: resize using media checks for mobile (min width) */
-  border-radius: 50%;
+  border-radius: 100%;
   /* margin-left: 15em; */
 }
 
@@ -72,7 +72,6 @@ body {
   flex-flow: column wrap;
   justify-content: center; /* main axis */
   align-items: center; /* cross axis */
-  width: 35%;
 }
 
 .name {
@@ -88,7 +87,7 @@ body {
 
 .intro {
   font-weight: 400;
-  width: 60%;
+  width: 40%;
 }
 
 .main-content {
@@ -97,9 +96,6 @@ body {
 }
 
 .skill-sections {
-  border-style: solid;
-  border-width: 0.1em;
-  border-radius: 1em;
   margin: 15em 15em 5em 15em;
   display: flex;
   flex-flow: row wrap;
@@ -129,7 +125,7 @@ body {
 }
 
 .projects {
-  margin: 0em 15em 15em 15em;
+  margin: 0em 15em 2em 15em;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -144,7 +140,14 @@ body {
   gap: 2em 2em;
 }
 
-.projects h2 {
+.projects h1 {
+  color: #bc5c00;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.card h2 {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
@@ -171,10 +174,11 @@ body {
 .card img {
   height: 100%;
   max-width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
 }
 
 .footer {
   margin-top: auto;
-  align-self: center;
+  text-align: center;
 }
