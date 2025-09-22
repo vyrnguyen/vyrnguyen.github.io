@@ -10,16 +10,9 @@ body {
   font-weight: 400;
   color: #54433a;
   height: 100%;
-  /* margin: 0; */
+  margin: 0;
 }
 
-.wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  min-height: 100vh;
-}
-
-/* accessibility */
 .visually-hidden {
   clip: rect(0 0 0 0); /* hides bg color */
   clip-path: inset(50%);
@@ -30,63 +23,78 @@ body {
   height: 1px;
 }
 
-.menu-items {
+nav {
   display: flex;
+  width: 50%;
+  justify-content: space-between;
   align-items: center;
-  list-style-type: none;
-  padding-left: 0.5em;
+  margin: 1em auto 0em auto;
 }
 
-.menu-items button {
+.nav-toggles,
+.nav-pages {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-toggles button {
   background: none;
   border: none;
 }
 
-.menu-items button img {
-  width: 3em;
-  height: 3em;
+.nav-toggles button img {
+  width: 3.2em;
+  height: 3.2em;
 }
 
-.menu-items li a {
-  padding-left: 0.5em;
+.nav-pages {
+  gap: 2em;
+}
+
+.nav-pages a {
+  font-size: 1.2em;
 }
 
 .about {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-top: 5em;
 }
 
-.profile-pic {
+.profile-picture {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-picture img {
   width: 100%;
-  max-width: 500px;
-  max-height: 500px;
-  /* TODO: resize using media checks for mobile (min width) */
-  border-radius: 100%;
-  /* margin-left: 15em; */
+  height: 100%;
+  object-fit: cover;
 }
 
 .description-column {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center; /* main axis */
-  align-items: center; /* cross axis */
+  align-items: center;
 }
 
 .name {
-  font-size: 6em;
-  height: 0.5em;
+  font-size: 5em;
+  margin: 0.1em;
 }
 
 .subheading {
-  color: #bc5c00;
+  /* color: #bc5c00; */
   font-size: 4em;
-  height: 1em;
+  margin: 0.1em;
 }
 
 .intro {
-  font-weight: 400;
+  /* font-weight: 400; */
   width: 40%;
 }
 
@@ -136,7 +144,7 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 20%);
   gap: 2em 2em;
 }
 

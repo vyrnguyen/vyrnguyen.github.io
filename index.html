@@ -43,7 +43,7 @@
 
   <body>
     <nav>
-      <ul class="menu-items">
+      <ul class="nav-toggles">
         <li>
           <button
             aria-label="Toggle Theme (light)"
@@ -68,186 +68,122 @@
             <p class="visually-hidden">Toggle SFX (off)</p>
           </button>
         </li>
-        <li>
-          <a
-            href="https://docs.google.com/document/d/1rAelepuGugXFsMSFAhbnN2VphN5-IZ3nkJe5MN3Ln9I/edit?usp=sharing"
-            target="_blank"
-            title="Open Vy's resume in Google Docs (new tab)"
-          >
-            resume
-          </a>
-        </li>
+      </ul>
+
+      <ul class="nav-pages">
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">portfolio</a></li>
       </ul>
     </nav>
 
-    <div class="wrapper">
-      <header class="about">
+    <header class="about">
+      <div class="profile-picture">
         <img
           aria-hidden="true"
           src="images/profile-picture.png"
-          alt="Vy Nguyen's profile picture; it portrays a girl with straight brown bangs
-        wearing a pair of glasses. She is facing forward from the shoulder-up."
-          class="profile-pic"
+          alt="A girl with straight brown bangs wearing a pair of glasses."
         />
-        <div class="description-column">
-          <h1 class="name">Vy Nguyen</h1>
-          <h2 class="subheading">Portfolio</h2>
-          <h4 class="intro">
-            <i>
-              Hi! I'm Vy (she/her), a computer science graduate passionate about
-              software engineering, teaching, and game development.
-            </i>
-          </h4>
-        </div>
-      </header>
+      </div>
 
-      <main class="main-content">
-        <div class="skill-sections">
-          <section class="skill">
-            <h2>dev tools</h2>
-            <ul class="tools-list">
-              <li>React</li>
-              <li>Figma</li>
-              <li>Git</li>
-              <li>Unity</li>
-              <li>MongoDB</li>
-              <li>Firebase</li>
-              <li>Postman</li>
-              <li>gdb</li>
-              <li>JUnit</li>
-              <li>NumPy</li>
-              <li>UNIX</li>
-              <li>GTKWave</li>
-            </ul>
-          </section>
-          <section class="skill">
-            <h2>languages</h2>
-            <ul class="tools-list">
-              <li>Python</li>
-              <li>Java</li>
-              <li>C</li>
-              <li>HTML/CSS</li>
-              <li>Verilog</li>
-              <li>x86/RISC-V</li>
-              <li>Rust</li>
-              <li>Go</li>
-              <li>OCaml</li>
-            </ul>
-          </section>
-        </div>
-        <section class="projects">
-          <h1>projects</h1>
-          <ul class="project-cards">
-            <li>
-              <article class="card">
-                <h2>3-Stage RISC-V CPU</h2>
-                <!-- <p>A modified version of the original RISC-V CPU.</p> -->
-                <img
-                  src="images/cards/riscv.png"
-                  alt="Diagram of a 3-stage pipelined RISC-V CPU."
-                />
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <h2>pint<strong>OS</strong></h2>
-                <!-- <p>The instructional operating system for the x86 ISA.</p> -->
-                <img
-                  src="images/cards/cs162bean.png"
-                  alt="Picture of a pinto bean for
-                the pintOS operating system"
-                />
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <h2>GemQuest</h2>
-                <!-- <p>A social networking app for GEnder MinoritieS.</p> -->
-                <img
-                  src="images/cards/gemQuest.png"
-                  alt="Picture of a colorful gem."
-                />
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <h2>Gitlet</h2>
-                <!-- <p>A miniature version control system emulated after Git.</p> -->
-                <img
-                  src="images/cards/gitfork.png"
-                  alt="Picture of a git fork."
-                />
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <h2>Dinner in the Closet</h2>
-                <!-- <p>Survive a Desi family gathering as a closeted queer kid.</p> -->
-                <img
-                  src="images/cards/dinner-in-the-closet.png"
-                  alt="Dinner in the closet logo."
-                />
-              </article>
-            </li>
-            <!-- <li> -->
-            <!--   <article class="card"> -->
-            <!--     <h2>Encrypted File Sharing System</h2> -->
-            <!--     <p> -->
-            <!--       A secure file sharing system that uses RSA, HMACs, and digital -->
-            <!--       signatures. -->
-            <!--     </p> -->
-            <!--     <img -->
-            <!--       src="images/cards/asym-crypto.png" -->
-            <!--       alt="Diagram of asymmetric cryptography." -->
-            <!--     /> -->
-            <!--   </article> -->
-            <!-- </li> -->
-            <!-- <li> -->
-            <!--   <article class="card"> -->
-            <!--     <h2>Escape Soda Hall</h2> -->
-            <!--     <p> -->
-            <!--       Can you escape the maze that is UC Berkeley's computer science -->
-            <!--       building? -->
-            <!--     </p> -->
-            <!--     <img -->
-            <!--       src="images/cards/escaping-soda.png" -->
-            <!--       alt="Picture of a maze game inspired by UC Berkeley's Soda -->
-            <!--       Hall." -->
-            <!--     /> -->
-            <!--   </article> -->
-            <!-- </li> -->
-            <!-- <li> -->
-            <!--   <article class="card"> -->
-            <!--     <h2>Pixel Paint</h2> -->
-            <!--     <p> -->
-            <!--       A simple painting app with built-in timer and reference photo -->
-            <!--       features! -->
-            <!--     </p> -->
-            <!--     <img -->
-            <!--       src="images/cards/drawing.png" -->
-            <!--       alt="Picture of a maze game inspired by UC Berkeley's Soda -->
-            <!--       Hall." -->
-            <!--     /> -->
-            <!--   </article> -->
-            <!-- </li> -->
-            <!-- <li> -->
-            <!--   <article class="card"> -->
-            <!--     <h2>Campiler</h2> -->
-            <!--     <p> -->
-            <!--       A compiler written in OCaml that translates to Intel x86_64 -->
-            <!--       assembly. -->
-            <!--     </p> -->
-            <!-- <img -->
-            <!--   src="images/cards/escaping-soda.png" -->
-            <!--   alt="Picture of a maze game inspired by UC Berkeley's Soda -->
-            <!--   Hall." -->
-            <!-- /> -->
-            <!-- </article> -->
-            <!-- </li> -->
+      <div class="description-column">
+        <h1 class="name">Vy Nguyen</h1>
+        <h2 class="subheading">Portfolio</h2>
+        <h4 class="intro">
+          <i>
+            Hi! I'm Vy (she/her), a computer science graduate passionate about
+            software engineering, teaching, and game development.
+          </i>
+        </h4>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="skill-sections">
+        <section class="skill">
+          <h2>dev tools</h2>
+          <ul class="tools-list">
+            <li>React</li>
+            <li>Figma</li>
+            <li>Git</li>
+            <li>Unity</li>
+            <li>MongoDB</li>
+            <li>Firebase</li>
+            <li>Postman</li>
+            <li>gdb</li>
+            <li>JUnit</li>
+            <li>NumPy</li>
+            <li>UNIX</li>
+            <li>GTKWave</li>
           </ul>
         </section>
-      </main>
-      <footer class="footer"><small>© 2025 Vy Nguyen</small></footer>
-    </div>
+        <section class="skill">
+          <h2>languages</h2>
+          <ul class="tools-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>HTML/CSS</li>
+            <li>Verilog</li>
+            <li>x86/RISC-V</li>
+            <li>Rust</li>
+            <li>Go</li>
+            <li>OCaml</li>
+          </ul>
+        </section>
+      </div>
+      <section class="projects">
+        <h1>projects</h1>
+        <ul class="project-cards">
+          <li>
+            <article class="card">
+              <h2>3-Stage RISC-V CPU</h2>
+              <img
+                src="images/cards/riscv.png"
+                alt="Diagram of a 3-stage pipelined RISC-V CPU."
+              />
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <h2>pint<strong>OS</strong></h2>
+              <img
+                src="images/cards/pintos.png"
+                alt="Picture of a pinto bean for
+                the pintOS operating system"
+              />
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <h2>GemQuest</h2>
+              <img
+                src="images/cards/gemQuest.png"
+                alt="Picture of a colorful gem."
+              />
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <h2>Gitlet</h2>
+              <img
+                src="images/cards/gitfork.png"
+                alt="Picture of a git fork."
+              />
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <h2>Dinner in the Closet</h2>
+              <img
+                src="images/cards/dinner-in-the-closet.png"
+                alt="Dinner in the closet logo."
+              />
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer"><small>© 2025 Vy Nguyen</small></footer>
   </body>
 </html>
