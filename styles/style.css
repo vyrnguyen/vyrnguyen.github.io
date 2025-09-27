@@ -45,8 +45,8 @@ nav {
 }
 
 .nav-toggles button img {
-  width: 3.2em;
-  height: 3.2em;
+  width: 3em;
+  height: 3em;
 }
 
 .nav-pages {
@@ -55,19 +55,27 @@ nav {
 
 .nav-pages a {
   font-size: 1.2em;
+  text-decoration: none;
 }
 
 .home-banner {
-  margin: 3em auto 0em auto;
+  margin: 7em auto 0 auto;
   width: 50vw;
 }
 
-.home-banner h1, h2 {
-  width: 30vw;
+.home-banner h1 {
+  z-index: 1;
+  margin: 0;
+  color: #6d9481;
+}
+
+.home-banner h2 {
+  z-index: 1;
   margin: 0;
 }
 
 .home-buttons {
+  z-index: 1;
   display: flex;
   flex-flow: row wrap;
   gap: 0 30px;
@@ -81,6 +89,17 @@ nav {
   border-radius: 10px;
   padding: 5px 10px;
   text-decoration: none;
+}
+
+#particles-js {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  top: auto;
+  left:0;
+  width: 100vw;
+  height: 30em;
+  pointer-events: all;
 }
 
 .footer {
