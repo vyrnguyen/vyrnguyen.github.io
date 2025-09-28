@@ -6,11 +6,23 @@ html,
 body {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 400;
   color: #54433a;
+  background-color: #fffcf5;
   height: 100%;
   margin: 0;
+}
+
+.syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sora-regular {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .visually-hidden {
@@ -53,45 +65,46 @@ nav {
   gap: 3em;
 }
 
-.nav-pages a {
+.nav-pages a:link, a:visited, a:hover, a:active {
   font-size: 1.5em;
   text-decoration: none;
+  color: #54433a;
 }
 
 .home-banner {
-  margin: 7em auto 0 auto;
-  width: 70vw;
+  margin: 10em auto 0 auto;
+  text-align: center;
 }
 
 .home-banner h1 {
   font-size: 5em;
-  z-index: 1;
-  margin: 0;
+  font-weight: 700;
   color: #6d9481;
+  margin: 0;
 }
 
 .home-banner h2 {
   font-size: 3em;
-  z-index: 1;
+  font-weight: 400;
   margin: 0;
 }
 
 .home-buttons {
-  z-index: 1;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   gap: 0 30px;
-  width: 40vw;
   margin-top: 5em;
 }
 
 .home-buttons a {
   font-size: 1.5em;
+  text-decoration: none;
   color: #6d9481;
   border: 2px solid #6d9481;
   border-radius: 10px;
   padding: 5px 10px;
-  text-decoration: none;
 }
 
 #particles-js {
@@ -99,8 +112,9 @@ nav {
   overflow: hidden;
   z-index: 0;
   left:0;
-  top: 7em;
+  top: 0;
   width: 100vw;
+  height: 50vh;
   pointer-events: all;
 }
 
