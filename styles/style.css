@@ -99,6 +99,7 @@ nav {
 }
 
 .home-buttons a {
+  z-index: 2;
   font-size: 1.5em;
   text-decoration: none;
   color: #6d9481;
@@ -109,20 +110,18 @@ nav {
 
 #particles-js {
   position: absolute;
-  overflow: hidden;
-  z-index: 0;
   left:0;
   top: 0;
+  z-index: 0;
   width: 100vw;
   height: 50vh;
+  overflow: hidden;
   pointer-events: all;
 }
 
 .footer {
-  position: fixed;
-  width: 100%;
-  left: 0;
+  position: absolute;
   bottom: 0;
-  margin-top: auto;
+  width: 100%;
   text-align: center;
 }
