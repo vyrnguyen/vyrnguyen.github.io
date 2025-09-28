@@ -2,16 +2,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-optical-sizing: auto;
-  color: #54433a;
-  background-color: #fffcf5;
-  height: 100%;
-  margin: 0;
-}
-
 .syne-mono-regular {
   font-family: "Syne Mono", monospace;
   font-weight: 400;
@@ -24,6 +14,17 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+html,
+body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-optical-sizing: auto;
+  color: #54433a;
+  background-color: #fffcf5;
+  height: 100%;
+  margin: 0;
+}
+
 
 .visually-hidden {
   clip: rect(0 0 0 0); /* hides bg color */
