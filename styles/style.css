@@ -2,23 +2,11 @@
   box-sizing: border-box;
 }
 
-.syne-mono-regular {
-  font-family: "Syne Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.sora-regular {
-  font-family: "Sora", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 html,
 body {
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   color: #54433a;
   background-color: #fffcf5;
   height: 100%;
@@ -46,6 +34,7 @@ nav {
 
 .nav-toggles,
 .nav-pages {
+  z-index: 2;
   display: flex;
   list-style: none;
   margin: 0;
@@ -67,6 +56,9 @@ nav {
 }
 
 .nav-pages a:link, a:visited, a:hover, a:active {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.5em;
   text-decoration: none;
   color: #54433a;
@@ -78,8 +70,10 @@ nav {
 }
 
 .home-banner h1 {
-  font-size: 5em;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
+  font-style: normal;
+  font-size: 5em;
   color: #6d9481;
   margin: 0;
 }
@@ -100,10 +94,13 @@ nav {
 }
 
 .home-buttons a {
-  z-index: 2;
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.5em;
   text-decoration: none;
   color: #6d9481;
+  z-index: 2;
   border: 2px solid #6d9481;
   border-radius: 10px;
   padding: 5px 10px;
