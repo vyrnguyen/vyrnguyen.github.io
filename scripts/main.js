@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   var messagesToType = ["engineer", "designer", "educator", "baker", "video game developer", "ally"];
-  
+   
   function typewriter(i, text, callback) {
     if (i < (text.length)) {
       document.getElementById("typewriter").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
@@ -25,4 +25,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     startTypingAnimation(0);
 });
-

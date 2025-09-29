@@ -13,7 +13,6 @@ body {
   margin: 0;
 }
 
-
 .visually-hidden {
   clip: rect(0 0 0 0); /* hides bg color */
   clip-path: inset(50%);
@@ -55,7 +54,10 @@ nav {
   gap: 3em;
 }
 
-.nav-pages a:link, a:visited, a:hover, a:active {
+.nav-pages a:link,
+a:visited,
+a:hover,
+a:active {
   font-family: "Syne Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -78,14 +80,13 @@ nav {
   margin: 0;
 }
 
-/* @keyframes Typewriter { */
-/*   from { width: 0% } */
-/*   to { width: 100% } */
-/* } */
-
 @keyframes Blink-Caret {
-  from { border-right-color: #54433a }
-  to { border-right-color: transparent }
+  from {
+    border-right-color: #54433a;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 .home-banner h2 {
@@ -97,7 +98,7 @@ nav {
 }
 
 .home-banner span {
-  border-right: .10em solid;
+  border-right: 0.1em solid;
   animation: Blink-Caret 500ms steps(40) infinite normal;
 }
 
@@ -117,10 +118,33 @@ nav {
   font-size: 1.5em;
   text-decoration: none;
   color: #6d9481;
+  position: relative;
   z-index: 2;
+  overflow: hidden;
   border: 2px solid #6d9481;
   border-radius: 10px;
   padding: 5px 10px;
+  transition: all 0.5s ease 0s;
+}
+
+.home-buttons a:hover {
+  color: #ece1d7;
+}
+
+.home-buttons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background-color: #6d9481;
+  transition: all 0.5s ease 0s;
+}
+
+.home-buttons a:hover::before {
+  width: 100%;
 }
 
 #particles-js {
@@ -138,7 +162,7 @@ nav {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-top: 13em; 
+  margin-top: 13em;
 }
 
 .timeline h2 {
