@@ -54,16 +54,16 @@ nav {
   gap: 3em;
 }
 
-.nav-pages a:link,
-a:visited,
-a:hover,
-a:active {
+.nav-pages a {
   font-family: "Syne Mono", monospace;
   font-weight: 400;
-  font-style: normal;
   font-size: 1.5em;
   text-decoration: none;
   color: #54433a;
+}
+
+.nav-pages a:hover {
+  color: #6d9481;
 }
 
 .home-banner {
@@ -74,7 +74,6 @@ a:active {
 .home-banner h1 {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 5em;
   color: #6d9481;
   margin: 0;
@@ -114,7 +113,6 @@ a:active {
 .home-buttons a {
   font-family: "Syne Mono", monospace;
   font-weight: 400;
-  font-style: normal;
   font-size: 1.5em;
   text-decoration: none;
   color: #6d9481;
@@ -159,16 +157,11 @@ a:active {
 }
 
 .timeline {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   margin-top: 13em;
 }
 
 .timeline h2 {
-  font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 2.5em;
   color: #6d9481;
   text-align: center;
@@ -176,6 +169,25 @@ a:active {
 
 .footer {
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
+  align-items: center;
   margin-top: 50%;
+}
+
+.footer-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-buttons img {
+  width: 3em;
+  height: 3em;
+}
+
+.footer-buttons img:hover {
+  width: 5em;
+  height: 5em;
 }
