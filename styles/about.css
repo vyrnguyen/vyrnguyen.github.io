@@ -5,10 +5,10 @@
 html,
 body {
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   color: #54433a;
+  background-color: #fffcf5;
   height: 100%;
   margin: 0;
 }
@@ -25,14 +25,15 @@ body {
 
 nav {
   display: flex;
-  width: 50vw;
   justify-content: space-between;
+  width: 75vw;
   align-items: center;
   margin: 1em auto 0em auto;
 }
 
 .nav-toggles,
 .nav-pages {
+  z-index: 2;
   display: flex;
   list-style: none;
   margin: 0;
@@ -45,65 +46,48 @@ nav {
 }
 
 .nav-toggles button img {
-  width: 3.2em;
-  height: 3.2em;
+  width: 3em;
+  height: 3em;
 }
 
 .nav-pages {
-  gap: 2em;
+  gap: 3em;
 }
 
 .nav-pages a {
-  font-size: 1.2em;
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #54433a;
 }
 
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-picture {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.profile-picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.description-column {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-.name {
-  font-size: 5em;
-  margin: 0.1em;
-}
-
-.subheading {
-  /* color: #bc5c00; */
-  font-size: 4em;
-  margin: 0.1em;
-}
-
-.intro {
-  /* font-weight: 400; */
-  width: 40%;
-}
-
-.main-content {
-  display: flex;
-  flex-flow: column wrap;
+.nav-pages a:hover {
+  color: #6d9481;
 }
 
 .footer {
-  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  padding: 1em;
+}
+
+.footer-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-buttons img {
+  width: 3em;
+  height: 3em;
+}
+
+.footer-buttons img:hover {
+  width: 5em;
+  height: 5em;
 }
