@@ -26,9 +26,9 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 75vw;
+  width: 50vw;
   align-items: center;
-  margin: 1em auto 0em auto;
+  margin: 3em auto 0em auto;
 }
 
 .nav-toggles,
@@ -46,8 +46,8 @@ nav {
 }
 
 .nav-toggles button img {
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
 }
 
 .nav-pages {
@@ -67,7 +67,8 @@ nav {
 }
 
 .home-banner {
-  margin: 10em auto 0 auto;
+  height: 20em;
+  margin: 10em auto auto auto;
   text-align: center;
 }
 
@@ -147,30 +148,29 @@ nav {
 
 #particles-js {
   position: absolute;
-  left: 0;
   top: 0;
-  z-index: 0;
   width: 100%;
-  height: 60%;
+  height: 40em;
+  background-image: url('');
+  background-size: inherit;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   overflow: hidden;
   pointer-events: all;
 }
 
-.timeline {
-  margin-top: 13em;
+.main-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.timeline h2 {
-  font-weight: 700;
-  font-size: 2.5em;
-  color: #6d9481;
-  text-align: center;
+.main-content {
+  /* min-height: auto; */
+  margin: auto;
+  flex: auto;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   text-align: center;
   padding: 1em;
 }
@@ -179,6 +179,7 @@ nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 0;
 }
@@ -189,6 +190,8 @@ nav {
 }
 
 .footer-buttons img:hover {
-  width: 5em;
-  height: 5em;
+  /* TODO: aria labels for accessibility */
+  margin-bottom: 10px; 
+  width: 3.5em;
+  height: 3.5em;
 }
