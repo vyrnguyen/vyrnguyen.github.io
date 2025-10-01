@@ -96,8 +96,37 @@
 
     <div class="main-container">
       <main class="main-content">
-        <section>
-          <h2>timeline</h2>
+        <section class="bulletin-board">
+          <h1>bulletin board</h1>
+          <h4><time id="datetime"></time></h3>
+
+          <div class="pinned">
+            <section class="blog">
+              <h2>blog</h2>
+
+              <article class="blog-entry">
+                <h3>neovim (coming soon!)</h3>
+              </article>
+
+              <article class="blog-entry">
+                <h3>kitty terminal (coming soon!)</h3>
+              </article>
+            </section>
+
+            <section class="mailbox">
+              <h2>message of the day!</h2>
+              <form action="/submit" method="POST">
+                <label for="mailbox">leave a note for a chance to be featured:</label>
+                <input
+                type="text"
+                id="bulletin-submission"
+                name="bulletin-submission"
+                required
+                />
+                <input type="submit" value="Submit" />
+              </form>
+            </section>
+          </div>
         </section>
       </main>
 
