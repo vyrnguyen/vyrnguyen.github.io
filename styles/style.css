@@ -1,14 +1,32 @@
+:root {
+  /* Light Theme */
+  --light-bg-color: #fffcf5;
+  --light-fg-color: #54433a;
+  --light-primary-color: #6d9481;
+  --light-secondary-color: #91ac84;
+
+  /* Dark Theme */
+  --dark-bg-color: #292522;
+  --dark-fg-color: #ece1d7;
+  --dark-primary-color: #dcafc5;
+  --dark-secondary-color: #f4d1e2;
+
+  /* Fonts */
+  --primary-font-family: "Zen Kaku Gothic New", sans-serif;
+  --secondary-font-family: "Syne Mono", monospace;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: 400;
   font-style: normal;
-  color: #54433a;
-  background-color: #fffcf5;
+  background-color: var(--light-bg-color);
+  color: var(--light-fg-color);
   height: 100%;
   margin: 0;
 }
@@ -26,8 +44,8 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 50vw;
   align-items: center;
+  width: 50vw;
   margin: 3em auto 0em auto;
 }
 
@@ -55,8 +73,7 @@ nav {
 }
 
 .nav-pages a {
-  font-family: "Syne Mono", monospace;
-  font-weight: 400;
+  font-family: var(--secondary-font-family); 
   font-size: 1.5em;
   text-decoration: none;
   color: #54433a;
@@ -74,15 +91,15 @@ nav {
 
 .home-banner h1 {
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 5em;
-  color: #6d9481;
+  color: var(--light-primary-color);
   margin: 0;
 }
 
 @keyframes Blink-Caret {
   from {
-    border-right-color: #54433a;
+    border-right-color: var(--light-fg-color);
   }
   to {
     border-right-color: transparent;
@@ -90,8 +107,8 @@ nav {
 }
 
 .home-banner h2 {
+  font-weight: normal;
   font-size: 3em;
-  font-weight: 400;
   white-space: nowrap;
   overflow: hidden;
   margin: 0 auto;
@@ -112,22 +129,21 @@ nav {
 }
 
 .home-buttons a {
-  font-family: "Syne Mono", monospace;
-  font-weight: 400;
+  font-family: var(--secondary-font-family); 
   font-size: 1.5em;
   text-decoration: none;
-  color: #6d9481;
-  position: relative;
-  z-index: 2;
+  color: var(--light-primary-color);
+  position: relative; /* keep sliding animation contained */
+  z-index: 2;         /* prioritize over particles */
   overflow: hidden;
-  border: 2px solid #6d9481;
+  border: 2px solid var(--light-primary-color);
   border-radius: 10px;
   padding: 5px 10px;
   transition: all 0.5s ease 0s;
 }
 
 .home-buttons a:hover {
-  color: #ece1d7;
+  color: var(--light-bg-color);
 }
 
 .home-buttons a::before {
@@ -138,7 +154,7 @@ nav {
   width: 0%;
   height: 100%;
   z-index: -1;
-  background-color: #6d9481;
+  background-color: var(--light-primary-color); 
   transition: all 0.5s ease 0s;
 }
 
