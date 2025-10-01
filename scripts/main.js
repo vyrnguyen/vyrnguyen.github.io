@@ -36,30 +36,30 @@ document.addEventListener("DOMContentLoaded", function () {
   startTypingAnimation(0);
 });
 
-function suffix(number) {
-  if (number > 3 && number < 21) {
-    return "th";
-  }
-  switch (number % 10) {
-    case 1:
-      return "st";
-    case 2:
-      return "nd";
-    case 3:
-      return "rd";
-    default:
-      return "th";
-  }
-}
+// function suffix(number) {
+//   if (number > 3 && number < 21) {
+//     return "th";
+//   }
+//   switch (number % 10) {
+//     case 1:
+//       return "st";
+//     case 2:
+//       return "nd";
+//     case 3:
+//       return "rd";
+//     default:
+//       return "th";
+//   }
+// }
 
-window.onload = function () {
-  setInterval(function () {
-    const dateObj = new Date();
-    const date = dateObj.getDate();
-    const month = dateObj.toLocaleString("default", { month: "short" });
-    const year = dateObj.getFullYear();
-
-    document.getElementById("datetime").innerHTML =
-      `${month} ${date}${suffix(date)}, ${year} at ${dateObj.toLocaleTimeString()}`;
-  }, 1000);
-};
+// window.onload = function () {
+//   setInterval(function () {
+//     const dateObj = new Date();
+//     const date = dateObj.getDate();
+//     const month = dateObj.toLocaleString("default", { month: "short" });
+//     const year = dateObj.getFullYear();
+//
+//     document.getElementById("datetime").innerHTML =
+//       `${month} ${date}${suffix(date)}, ${year}, at ${dateObj.toLocaleTimeString()}`;
+//   }, 1000);
+// };
