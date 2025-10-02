@@ -1,16 +1,37 @@
+:root {
+  /* Light Theme */
+  --light-bg-color: #fffcf5;
+  --light-fg-color: #54433a;
+  --light-primary-color: #6d9481;
+  --light-secondary-color: #91ac84;
+  --light-third-color: #d0e2c7;
+
+  /* Dark Theme */
+  --dark-bg-color: #292522;
+  --dark-fg-color: #ece1d7;
+  --dark-primary-color: #dcafc5;
+  --dark-secondary-color: #f4d1e2;
+
+  /* Fonts */
+  --primary-font-family: "Zen Kaku Gothic New", sans-serif;
+  --secondary-font-family: "Syne Mono", monospace;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: 400;
   font-style: normal;
-  color: #54433a;
-  background-color: #fffcf5;
-  height: 100%;
+  background-color: var(--light-bg-color);
+  color: var(--light-fg-color);
+  min-height: 100vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .visually-hidden {
@@ -26,9 +47,9 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 75vw;
   align-items: center;
-  margin: 1em auto 0em auto;
+  width: 50vw;
+  margin: 3em auto 0em auto;
 }
 
 .nav-toggles,
@@ -46,8 +67,8 @@ nav {
 }
 
 .nav-toggles button img {
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
 }
 
 .nav-pages {
@@ -55,31 +76,37 @@ nav {
 }
 
 .nav-pages a {
-  font-family: "Syne Mono", monospace;
-  font-weight: 400;
+  font-family: var(--secondary-font-family);
   font-size: 1.5em;
   text-decoration: none;
   color: #54433a;
+  font-weight: bold;
 }
 
 .nav-pages a:hover {
   color: #6d9481;
 }
 
+main {
+  flex: 1;
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   text-align: center;
-  padding: 1em;
+  margin-bottom: 3em;
 }
 
 .footer-buttons {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
-  justify-content:center;
+  justify-content: center;
   list-style: none;
   padding: 0;
+}
+
+.footer-buttons li {
+  z-index: 2;
 }
 
 .footer-buttons img {
@@ -88,6 +115,6 @@ nav {
 }
 
 .footer-buttons img:hover {
-  width: 5em;
-  height: 5em;
+  /* TODO: aria labels for accessibility */
+  transform: scale(1.2);
 }
