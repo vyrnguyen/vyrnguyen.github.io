@@ -46,19 +46,30 @@ body {
 
 nav {
   display: flex;
+  flex: initial;
   justify-content: space-between;
   align-items: center;
-  width: 50vw;
+  min-width: 50vw;
   margin: 3em auto 0em auto;
 }
 
 .nav-toggles,
 .nav-pages {
-  z-index: 2;
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.nav-toggles li {
+  z-index: 2;
+}
+
+.nav-pages li:first-child {
+  margin-left: 5em;
+}
+.nav-toggles li:last-child {
+  margin-right: 5em;
 }
 
 .nav-toggles button {
@@ -75,29 +86,33 @@ nav {
   gap: 3em;
 }
 
+.nav-pages li {
+  z-index: 2;
+}
+
 .nav-pages a {
   font-family: var(--secondary-font-family);
   font-size: 1.5em;
   text-decoration: none;
-  color: #54433a;
+  color: var(--light-fg-color);
   font-weight: bold;
 }
 
 .nav-pages a:hover {
-  color: #6d9481;
-}
-
-main {
-  flex: 1;
+  color: var(--light-primary-color);
 }
 
 .footer {
+  display: flex;
+  flex: initial;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-bottom: 3em;
+  margin: 3em;
 }
 
 .footer-buttons {
-  position: relative;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
