@@ -108,6 +108,32 @@ header {
   color: var(--light-primary-color);
 }
 
+.main-content {
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 5em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: inherit;
+  max-width: 30em;
+
+}
+
+.profile-picture {
+  max-height: 400px;
+  max-width: 400px;
+  /* flex: auto; */
+}
+
 .footer {
   display: flex;
   flex: initial;
