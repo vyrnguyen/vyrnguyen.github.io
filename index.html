@@ -49,50 +49,54 @@
   </head>
 
   <body>
-    <div id="particles-js"></div>
-    <nav>
-      <ul class="nav-toggles">
-        <li>
-          <button
-            aria-label="Toggle Theme (light)"
-            name="Toggle Theme (light)"
-            type="button"
-          >
-            <img aria-hidden="true" alt="Sun" src="images/navbar/sun.png" />
-            <p class="visually-hidden">Toggle Theme (light)</p>
-          </button>
-        </li>
-        <li>
-          <button
-            aria-label="Toggle SFX (off)"
-            name="Toggle SFX (off)"
-            type="button"
-          >
-            <img
-              aria-hidden="true"
-              alt="SFX Off"
-              src="images/navbar/sfx_off_light.png"
-            />
-            <p class="visually-hidden">Toggle SFX (off)</p>
-          </button>
-        </li>
-      </ul>
+    <div aria-hidden=true id="particles-js" aria-labelledby="particles-label" >
+      <span id="particles-label" hidden>Particles</span>
+    </div>
+    <header>
+      <nav>
+        <ul class="nav-toggles">
+          <li>
+            <button
+              aria-labelledby="toggle-theme-label"
+              name="Toggle Theme"
+              type="button"
+            >
+              <img aria-hidden="true" alt="Sun" src="images/navbar/sun.png" />
+              <span id="toggle-theme-label" hidden>Toggle Theme</span>
+            </button>
+          </li>
+          <li>
+            <button
+              aria-labelledby="toggle-sfx-label"
+              name="Toggle SFX"
+              type="button"
+            >
+              <img
+                aria-hidden="true"
+                alt="SFX"
+                src="images/navbar/sfx_off_light.png"
+              />
+              <span id="toggle-sfx-label" hidden>Toggle SFX</span>
+            </button>
+          </li>
+        </ul>
 
-      <ul class="nav-pages">
-        <li><a href="#">home</a></li>
-        <li><a href="html/about.html">about</a></li>
-        <li><a href="html/portfolio.html">portfolio</a></li>
-      </ul>
-    </nav>
+        <ul class="nav-pages">
+          <li><a href="#">home</a></li>
+          <li><a href="html/about.html">about</a></li>
+          <li><a href="html/portfolio.html">portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <header class="home-banner">
+    <main class="hero-banner">
       <h1>Vy Nguyen</h1>
       <h2 id="typewriter"></h2>
-      <div class="home-buttons">
+      <nav class="hero-buttons">
         <a href="html/about.html">about →</a>
         <a href="html/portfolio.html">portfolio →</a>
-      </div>
-    </header>
+      </nav>
+    </main>
 
     <footer class="footer">
       <ul class="footer-buttons">

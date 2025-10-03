@@ -3,6 +3,7 @@
   --light-bg-color: #fffcf5;
   --light-fg-color: #54433a;
   --light-primary-color: #6d9481;
+  --light-primary-color-darker: #628473;
   --light-secondary-color: #91ac84;
   --light-third-color: #d0e2c7;
 
@@ -34,23 +35,19 @@ body {
   flex-direction: column;
 }
 
-.visually-hidden {
-  clip: rect(0 0 0 0); /* hides bg color */
-  clip-path: inset(50%);
-  overflow: hidden; /* content can't be seen outside element */
-  position: absolute;
-  white-space: nowrap; /* suppress line breaks for sr */
-  width: 1px;
-  height: 1px;
+header {
+  margin: 3em auto 0em auto;
+  nav {
+    display: flex;
+    flex: initial;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 50vw;
+  }
 }
 
-nav {
-  display: flex;
-  flex: initial;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 50vw;
-  margin: 3em auto 0em auto;
+[hidden] {
+  display: none;
 }
 
 .nav-toggles,
@@ -102,7 +99,7 @@ nav {
   color: var(--light-primary-color);
 }
 
-.home-banner {
+.hero-banner {
   display: flex;
   flex: auto;
   flex-direction: column;
@@ -111,7 +108,7 @@ nav {
   min-height: 50em;
 }
 
-.home-banner h1 {
+.hero-banner h1 {
   position: relative;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: bold;
@@ -130,7 +127,7 @@ nav {
   }
 }
 
-.home-banner h2 {
+.hero-banner h2 {
   font-weight: normal;
   font-size: 3em;
   white-space: nowrap;
@@ -139,12 +136,12 @@ nav {
   margin: 0 auto;
 }
 
-.home-banner span {
+.hero-banner span {
   border-right: 0.1em solid;
   animation: Blink-Caret 500ms steps(40) infinite normal;
 }
 
-.home-buttons {
+.hero-buttons {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -153,7 +150,7 @@ nav {
   margin-top: 5em;
 }
 
-.home-buttons a {
+.hero-buttons a {
   z-index: 2;
   font-family: var(--secondary-font-family);
   font-size: 1.5em;
@@ -167,11 +164,11 @@ nav {
   transition: all 0.5s ease 0s;
 }
 
-.home-buttons a:hover {
+.hero-buttons a:hover {
   color: var(--light-bg-color);
 }
 
-.home-buttons a::before {
+.hero-buttons a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -183,7 +180,7 @@ nav {
   transition: all 0.5s ease 0s;
 }
 
-.home-buttons a:hover::before {
+.hero-buttons a:hover::before {
   width: 100%;
 }
 
@@ -195,6 +192,7 @@ nav {
   overflow: hidden;
   pointer-events: all;
 }
+
 
 .footer {
   display: flex;
