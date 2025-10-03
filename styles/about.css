@@ -3,6 +3,7 @@
   --light-bg-color: #fffcf5;
   --light-fg-color: #54433a;
   --light-primary-color: #6d9481;
+  --light-primary-color-darker: #628473;
   --light-secondary-color: #91ac84;
   --light-third-color: #d0e2c7;
 
@@ -34,23 +35,28 @@ body {
   flex-direction: column;
 }
 
-.visually-hidden {
-  clip: rect(0 0 0 0); /* hides bg color */
-  clip-path: inset(50%);
-  overflow: hidden; /* content can't be seen outside element */
-  position: absolute;
-  white-space: nowrap; /* suppress line breaks for sr */
-  width: 1px;
-  height: 1px;
+header {
+  margin: 3em auto 0em auto;
+  nav {
+    display: flex;
+    flex: initial;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 50vw;
+  }
 }
 
-nav {
-  display: flex;
-  flex: initial;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 50vw;
-  margin: 3em auto 0em auto;
+[hidden] {
+  display: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip-path: inset(100%); 
+  width: 1px; 
+  height: 1px; 
+  overflow: hidden; 
+  position: absolute; 
+  white-space: nowrap; 
 }
 
 .nav-toggles,
@@ -130,6 +136,5 @@ nav {
 }
 
 .footer-buttons img:hover {
-  /* TODO: aria labels for accessibility */
   transform: scale(1.2);
 }

@@ -50,6 +50,15 @@ header {
   display: none;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  clip-path: inset(100%); 
+  width: 1px; 
+  height: 1px; 
+  overflow: hidden; 
+  position: absolute; 
+  white-space: nowrap; 
+}
+
 .nav-toggles,
 .nav-pages {
   display: flex;
@@ -222,6 +231,5 @@ header {
 }
 
 .footer-buttons img:hover {
-  /* TODO: aria labels for accessibility */
   transform: scale(1.2);
 }

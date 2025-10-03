@@ -47,59 +47,91 @@
   </head>
 
   <body>
-    <nav>
-      <ul class="nav-toggles">
-        <li>
-          <button
-            aria-label="Toggle Theme (light)"
-            name="Toggle Theme (light)"
-            type="button"
-          >
-            <img aria-hidden="true" alt="Sun" src="../images/navbar/sun.png" />
-            <p class="visually-hidden">Toggle Theme (light)</p>
-          </button>
-        </li>
-        <li>
-          <button
-            aria-label="Toggle SFX (off)"
-            name="Toggle SFX (off)"
-            type="button"
-          >
-            <img
-              aria-hidden="true"
-              alt="SFX Off"
-              src="../images/navbar/sfx_off_light.png"
-            />
-            <p class="visually-hidden">Toggle SFX (off)</p>
-          </button>
-        </li>
-      </ul>
+    <header>
+      <nav>
+        <ul class="nav-toggles">
+          <li>
+            <button
+              aria-labelledby="toggle-theme-label"
+              name="Toggle Theme"
+              type="button"
+            >
+              <img
+                aria-hidden="true"
+                alt="Sun"
+                src="../images/navbar/sun.png"
+              />
+              <span id="toggle-theme-label" hidden>Toggle Theme</span>
+            </button>
+          </li>
+          <li>
+            <button
+              aria-labelledby="toggle-sfx-label"
+              name="Toggle SFX"
+              type="button"
+            >
+              <img
+                aria-hidden="true"
+                alt="SFX"
+                src="../images/navbar/sfx_off_light.png"
+              />
+              <span id="toggle-sfx-label" hidden>Toggle SFX</span>
+            </button>
+          </li>
+        </ul>
 
-      <ul class="nav-pages syne-mono-regular">
-        <li><a href="../index.html">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="portfolio.html">portfolio</a></li>
-      </ul>
-    </nav>
+        <ul class="nav-pages">
+          <li><a href="../index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <main></main>
+    <main class="main-content">
+      <header><h1>about me</h1></header>
+      <p>
+        Hi! I'm Vy (she/her), a computer science graduate from UC Berkeley
+        currently based in Anaheim, CA.
+      </p>
+      <p>
+        My passion lies in developing friendly products for all. Over the course
+        of my career, I've had the pleasure of working closely with many
+        underrepresented groups from around the world. Growing up around similar
+        folk and identifying as one myself, I strive to create software that
+        delivers an inclusive user experience. This has led me to pursue
+        full-stack development and software engineering -- roles that allow me
+        to blend thoughtful design with robust engineering. My favorite work
+        lies in creating apps that are not only aesthetically pleasing, but also
+        meticulously built for performance and usability.
+      </p>
+
+      <p>
+        On days off, I enjoy baking new recipes with friends, crocheting animals, and exploring Hyrule for Korok
+        seeds.
+      </p>
+    </main>
 
     <footer class="footer">
       <ul class="footer-buttons">
         <li>
           <a href="https://github.com/vyrnguyen"
-            ><img alt="github" src="../images/footer/github.png"
-          /></a>
+            ><img alt="github" src="../images/footer/github.png" />
+            <span class="visually-hidden">Link to Vy's GitHub profile</span>
+          </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/vy-nguyen-b195b6344/"
-            ><img alt="linkedin" src="../images/footer/linkedin.png"
-          /></a>
+            ><img alt="linkedin" src="../images/footer/linkedin.png" />
+            <span class="visually-hidden">Link to Vy's LinkedIn profile</span>
+          </a>
         </li>
         <li>
           <a href="mailto:vy_nguyen@berkeley.edu"
-            ><img alt="email" src="../images/footer/email.png"
-          /></a>
+            ><img alt="email" src="../images/footer/email.png" />
+
+            <span class="visually-hidden">Link to send an email to Vy.</span>
+          </a>
         </li>
       </ul>
       <small>© 2025 Vy Nguyen</small>
