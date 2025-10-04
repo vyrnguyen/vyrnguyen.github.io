@@ -50,13 +50,16 @@ header {
   display: none;
 }
 
-.visually-hidden:not(:focus):not(:active) {
-  clip-path: inset(100%); 
-  width: 1px; 
-  height: 1px; 
-  overflow: hidden; 
-  position: absolute; 
-  white-space: nowrap; 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(100%);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .nav-toggles,
@@ -108,11 +111,11 @@ header {
   color: var(--light-primary-color);
 }
 
-.main-content {
+main {
   margin: auto;
 }
 
-.container {
+.about-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -120,23 +123,91 @@ header {
   column-gap: 5em;
 }
 
-.content {
+.description {
   display: flex;
   flex-direction: column;
   flex: inherit;
   max-width: 30em;
-
 }
 
 .profile-picture {
   max-height: 400px;
   max-width: 400px;
-  /* flex: auto; */
+}
+
+.korok-text {
+  display: inline-flex;
+  cursor: url("../images/characters/Elma.png"), pointer;
+}
+
+.korok-text:hover {
+  background-image: linear-gradient(
+    to left,
+    rgb(156, 79, 150),
+    rgb(47, 0, 255),
+    rgb(42, 168, 242),
+    rgb(139, 212, 72),
+    rgb(250, 228, 66),
+    rgb(251, 169, 73),
+    rgb(255, 99, 85)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.korok-text:hover span {
+  animation: bounce 0.6s ease forwards;
+}
+
+.korok-text:hover span:nth-child(2) {
+  animation-delay: 0s;
+}
+
+.korok-text:hover span:nth-child(3) {
+  animation-delay: 0.05s;
+}
+.korok-text:hover span:nth-child(4) {
+  animation-delay: 0.1s;
+}
+.korok-text:hover span:nth-child(5) {
+  animation-delay: 0.15s;
+}
+.korok-text:hover span:nth-child(6) {
+  animation-delay: 0.2s;
+}
+.korok-text:hover span:nth-child(7) {
+  animation-delay: 0.25s;
+}
+.korok-text:hover span:nth-child(8) {
+  animation-delay: 0.3s;
+}
+.korok-text:hover span:nth-child(9) {
+  animation-delay: 0.35s;
+}
+.korok-text:hover span:nth-child(10) {
+  animation-delay: 0.4s;
+}
+.korok-text:hover span:nth-child(11) {
+  animation-delay: 0.45s;
+}
+.korok-text:hover span:nth-child(12) {
+  animation-delay: 0.5s;
 }
 
 .footer {
   display: flex;
-  flex: initial;
   flex-direction: column;
   justify-content: center;
   align-items: center;
