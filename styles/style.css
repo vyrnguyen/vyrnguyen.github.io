@@ -35,7 +35,7 @@ body {
   flex-direction: column;
 }
 
-header {
+.main-header {
   margin: 3em auto 0em auto;
   nav {
     display: flex;
@@ -118,6 +118,10 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 50em;
+}
+
+.hero-header {
+  text-align: center;
 }
 
 .hero-banner h1 {

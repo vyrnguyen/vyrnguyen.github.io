@@ -35,7 +35,7 @@ body {
   flex-direction: column;
 }
 
-header {
+.main-header {
   margin: 3em auto 0em auto;
   nav {
     display: flex;
