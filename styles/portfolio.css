@@ -116,20 +116,26 @@ main {
 }
 
 @keyframes fade-in {
-  from {
-    opacity: 0%;
+  0% {
+    opacity: 0;
   }
-  to {
-    opacity: 100%;
+  1% {
+    visibility: visible;
+    opacity: 0.01;
   }
+  100% {
+    visibility: visible;
+    opacity: 1;
+ }
 }
 
 @keyframes fade-out {
   from {
-    opacity: 100%;
+    opacity: 1;
   }
   to {
-    opacity: 0%;
+    visibility: collapse;
+    opacity: 0;
   }
 }
 
