@@ -39,7 +39,7 @@
     <!--   type="image/x-icon" -->
     <!-- /> -->
 
-    <!-- <script src="../../scripts/portfolio.js" defer></script> -->
+    <script src="../../scripts/portfolio/ditc.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -105,12 +105,11 @@
             </p>
             <p>
               March 2024 - May 2024 |
-                <a
-                  href="https://beamcsrd.itch.io/dinner-in-the-closet"
-                  target="_blank"
-                  >Play on Itch</a
-                >
-              </span>
+              <a
+                href="https://beamcsrd.itch.io/dinner-in-the-closet"
+                target="_blank"
+                >Play on Itch</a
+              >
             </p>
           </div>
           <a
@@ -120,10 +119,13 @@
           >
             <img
               src="../../images/cards/dinner-in-the-closet.png"
-              alt="dinner in the closet logo"
+              alt="Dinner in the Closet logo"
             />
+            <span class="sr-only">Dinner in the Closet logo</span>
           </a>
         </header>
+
+        <hr />
 
         <div class="tech-stack">
           <section>
@@ -141,17 +143,37 @@
           </section>
         </div>
 
-        <section class="gallery click-zoom">
+        <hr />
+
+        <section class="gallery">
           <header><h2>GALLERY</h2></header>
           <div class="gallery-grid">
-            <label><input type="checkbox"><img src="../../images/gallery/ditc/prologue.png" alt="Nidhi's mother
-              calling out to them in the intro animation" /></label>
-            <!-- <label class="overlay"><input type="checkbox"></label> -->
-            <img src="../../images/gallery/ditc/livingroom.png" alt="Living room
-              scene" />
-            <img src="../../images/gallery/ditc/kitchen.png" alt="Kitchen
-              scene" />
-            <img src="../../images/gallery/ditc/racing.png" alt="Race car game" />
+            <img
+              class="gallery-img"
+              src="../../images/gallery/ditc/prologue.png"
+              alt="nidhi's mother
+              calling out to them in the intro animation"
+            />
+            <img
+              class="gallery-img"
+              src="../../images/gallery/ditc/livingroom.png"
+              alt="living room
+              scene"
+            />
+            <img
+              class="gallery-img"
+              src="../../images/gallery/ditc/kitchen.png"
+              alt="kitchen
+              scene"
+            />
+            <img
+              class="gallery-img"
+              src="../../images/gallery/ditc/racing.png"
+              alt="race car game"
+            />
+            <div id="overlay">
+              <img id="zoomed-img" src="" alt="Zoomed image of " />
+            </div>
           </div>
         </section>
       </article>
@@ -174,7 +196,6 @@
         <li>
           <a href="mailto:vy_nguyen@berkeley.edu"
             ><img alt="email" src="../../images/footer/email.png" />
-
             <span class="sr-only">Link to send an email to Vy.</span>
           </a>
         </li>
