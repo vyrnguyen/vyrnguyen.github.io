@@ -42,7 +42,7 @@ body {
     flex: initial;
     justify-content: space-between;
     align-items: center;
-    min-width: 70vw;
+    min-width: 51vw;
   }
 }
 
@@ -113,9 +113,6 @@ body {
 
 main {
   margin: auto;
-}
-
-.about-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
