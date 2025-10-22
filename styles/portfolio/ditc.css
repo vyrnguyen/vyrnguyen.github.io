@@ -166,8 +166,9 @@ hr {
 }
 
 .tech-stack {
+  max-width: 34vw;
   display: grid;
-  grid-template-columns: 17vw 17vw 17vw;
+  grid-template-columns: 1fr 1fr;
   column-gap: 1em;
 }
 
@@ -181,7 +182,7 @@ hr {
   display: flex;
   margin-top: 0;
   padding: 0em;
-  column-gap: 0.5em;
+  gap: 0.5em 0.5em;
 }
 
 .tech-stack li {
