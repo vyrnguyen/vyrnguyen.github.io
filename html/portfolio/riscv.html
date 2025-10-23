@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Vy's Website</title>
+    <meta author="Vy Nguyen" content="Vy's Personal Website" />
+    <meta
+      name="description"
+      content="Hi! I'm Vy, a computer science
+      graduate from UC Berkeley interested in software engineering. Check out
+      my website to learn more!"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Open Graph
+    (4) required properties:  -->
+    <meta property="og:title" content="Vy Nguyen" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vyrnguyen.github.io" />
+    <meta
+      property="og:image"
+      content="https://vyrnguyen/vyrnguyen.github.io/static/images/favicon.png"
+    />
+    <meta
+      property="og:description"
+      content="Hi! I'm Vy, a computer science
+      graduate from UC Berkeley interested in software engineering. Check out
+      my website to learn more!"
+    />
+
+    <!-- References -->
+    <link rel="stylesheet" href="../../styles/portfolio/gemquest.css" />
+    <link
+      rel="icon"
+      href="../../static/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <script src="../../scripts/portfolio/gemquest.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&family=Syne+Mono&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav>
+        <ul class="nav-toggles">
+          <li>
+            <button
+              aria-labelledby="toggle-theme-label"
+              name="Toggle Theme"
+              type="button"
+            >
+              <img
+                aria-hidden="true"
+                alt="Sun"
+                src="../../static/images/navbar/sun.png"
+              />
+              <span id="toggle-theme-label" hidden>Toggle Theme</span>
+            </button>
+          </li>
+          <li>
+            <button
+              aria-labelledby="toggle-sfx-label"
+              name="Toggle SFX"
+              type="button"
+            >
+              <img
+                aria-hidden="true"
+                alt="SFX"
+                src="../../static/images/navbar/sfx_off_light.png"
+              />
+              <span id="toggle-sfx-label" hidden>Toggle SFX</span>
+            </button>
+          </li>
+        </ul>
+
+        <ul class="nav-pages">
+          <li><a href="../../index.html">home</a></li>
+          <li><a href="../about.html">about</a></li>
+          <li><a href="work.html">portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <header class="introduction">
+          <div class="description">
+            <h1>3-Stage RISC-V CPU</h1>
+            <p>
+              Written in Verilog, I designed an optimized and pipelined
+              RISC-V CPU capable of executing the complete RV32I Base Instruction Set. 
+            </p>
+            <p>
+              July 2023 - August 2023 |
+              <a href="https://github.com/vyrnguyen/gem-quest" target="_blank"
+                >GitHub</a
+              >
+              |
+              <a
+                href="../../static/documents/gemquest-pamphlet.pdf"
+                target="_blank"
+                >PDF</a
+              >
+            </p>
+          </div>
+          <a
+            href="https://github.com/vyrnguyen/gem-quest"
+            target="_blank"
+            class="logo"
+          >
+            <img
+              src="../../static/images/cards/gemQuest.png"
+              alt="GemQuest logo"
+            />
+            <span class="sr-only">GemQuest logo</span>
+          </a>
+        </header>
+
+        <hr />
+
+        <div class="tech-stack">
+          <section>
+            <header><h2>DEVELOPMENT</h2></header>
+            <ul>
+              <li>React Native</li>
+              <li>Figma</li>
+              <li>Expo</li>
+              <li>Firebase</li>
+              <li>Git</li>
+            </ul>
+          </section>
+          <section>
+            <header><h2>LANGUAGES</h2></header>
+            <ul>
+              <li>Javascript</li>
+            </ul>
+          </section>
+        </div>
+
+        <hr />
+
+        <section class="gallery">
+          <header><h2>GALLERY</h2></header>
+          <div class="gallery-grid">
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/home.png"
+              alt="GemQuest home page"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/profile.png"
+              alt="GemQuest profile page"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/profile-creation-main.png"
+              alt="Profile creation: main page"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/profile-creation-about.png"
+              alt="Profile creation: demographics"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/profile-creation-interests.png"
+              alt="Profile creation: interests and hobbies"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/profile-demo.png"
+              alt="Profile creation visuals on a mobile device"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/quests.png"
+              alt="Quests page"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/quest-creation.png"
+              alt="Quest creation: home page"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/quest-creation-pt2.png"
+              alt="Quest creation: Plan of Action and Location"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/quest-creation-demo.png"
+              alt="Quest creation: Title, Date, and Time"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/gems.png"
+              alt="Gem collection"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/goals.png"
+              alt="Goals page"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/gem-acquisition.png"
+              alt="Acquiring a gem"
+            />
+            <img
+              class="gallery-img"
+              src="../../static/images/gallery/gemquest/gamification-demo.png"
+              alt="Game pages on a mobile device"
+            />
+            <div id="overlay">
+              <img id="zoomed-img" src="" alt="Zoomed image of " />
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer-buttons">
+        <li>
+          <a href="https://github.com/vyrnguyen"
+            ><img alt="github" src="../../static/images/footer/github.png" />
+            <span class="sr-only">Link to Vy's GitHub profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/vy-nguyen-b195b6344/"
+            ><img
+              alt="linkedin"
+              src="../../static/images/footer/linkedin.png"
+            />
+            <span class="sr-only">Link to Vy's LinkedIn profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:vy_nguyen@berkeley.edu"
+            ><img alt="email" src="../../static/images/footer/email.png" />
+            <span class="sr-only">Link to send an email to Vy.</span>
+          </a>
+        </li>
+      </ul>
+      <small>© 2025 Vy Nguyen</small>
+    </footer>
+  </body>
+</html>

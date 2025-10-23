@@ -134,7 +134,7 @@ main {
 
 .korok-text {
   display: inline-flex;
-  cursor: url("../images/characters/Elma.png"), pointer;
+  cursor: url("../static/images/characters/Elma.png"), pointer;
 }
 
 .korok-text:hover {
