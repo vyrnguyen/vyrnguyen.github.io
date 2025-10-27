@@ -200,7 +200,9 @@ hr {
 }
 
 .gallery {
-  max-width: 51vw;
+  display: flex;
+  flex-flow: column wrap;
+  /* max-width: 51vw; */
 }
 
 .gallery header h2 {
@@ -208,14 +210,7 @@ hr {
   font-weight: 500;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 51vw;
-  gap: 1em 1em;
-}
-
-.gallery-grid iframe {
+.gallery iframe {
   border: none;
 }
 
