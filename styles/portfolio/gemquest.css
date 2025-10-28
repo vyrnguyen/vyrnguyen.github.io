@@ -168,7 +168,7 @@ hr {
 .tech-stack {
   max-width: 51vw;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 1fr;
   column-gap: 1em;
 }
 

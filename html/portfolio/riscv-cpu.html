@@ -29,14 +29,14 @@
     />
 
     <!-- References -->
-    <link rel="stylesheet" href="../../styles/portfolio/gemquest.css" />
+    <link rel="stylesheet" href="../../styles/portfolio/riscv-cpu.css" />
     <link
       rel="icon"
       href="../../static/images/favicon.png"
       type="image/x-icon"
     />
 
-    <script src="../../scripts/portfolio/gemquest.js" defer></script>
+    <script src="../../scripts/portfolio/render-lightbox.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -94,30 +94,24 @@
           <div class="description">
             <h1>3-Stage RISC-V CPU</h1>
             <p>
-              Written in Verilog, I designed an optimized and pipelined
-              RISC-V CPU capable of executing the complete RV32I Base Instruction Set. 
+              For this project, my teammate and I designed and optimized a <strong>3-stage pipelined
+                RISC-V CPU</strong> capable of executing the complete RV32I Base
+              Instruction Set. Features include (but are not limited to)
+              handling of control and data hazards; interfacing with the CPU
+              through memory-mapped I/O to send and receive bytes to and from
+              the UART; and branch prediction. 
             </p>
             <p>
-              July 2023 - August 2023 |
-              <a href="https://github.com/vyrnguyen/gem-quest" target="_blank"
-                >GitHub</a
-              >
-              |
-              <a
-                href="../../static/documents/gemquest-pamphlet.pdf"
-                target="_blank"
-                >PDF</a
+              March 2025 - May 2025 |
+              <a href="mailto:vy_nguyen@berkeley.edu" target="_blank"
+                >Contact for GitHub</a
               >
             </p>
           </div>
-          <a
-            href="https://github.com/vyrnguyen/gem-quest"
-            target="_blank"
-            class="logo"
-          >
+          <div class="logo">
             <img
-              src="../../static/images/cards/gemQuest.png"
-              alt="GemQuest logo"
+              src="../../static/images/cards/microprocessor-chip.png"
+              alt="Microprocessor chip"
             />
             <span class="sr-only">GemQuest logo</span>
           </a>
@@ -129,17 +123,17 @@
           <section>
             <header><h2>DEVELOPMENT</h2></header>
             <ul>
-              <li>React Native</li>
-              <li>Figma</li>
-              <li>Expo</li>
-              <li>Firebase</li>
+              <li>PYNQ-Z1 Xilinx</li>
+              <li>GTKWave</li>
+              <li>Vivado</li>
               <li>Git</li>
             </ul>
           </section>
           <section>
             <header><h2>LANGUAGES</h2></header>
             <ul>
-              <li>Javascript</li>
+              <li>Verilog</li>
+              <li>RISC-V Assembly</li>
             </ul>
           </section>
         </div>
@@ -149,75 +143,9 @@
         <section class="gallery">
           <header><h2>GALLERY</h2></header>
           <div class="gallery-grid">
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/home.png"
-              alt="GemQuest home page"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/profile.png"
-              alt="GemQuest profile page"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/profile-creation-main.png"
-              alt="Profile creation: main page"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/profile-creation-about.png"
-              alt="Profile creation: demographics"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/profile-creation-interests.png"
-              alt="Profile creation: interests and hobbies"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/profile-demo.png"
-              alt="Profile creation visuals on a mobile device"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/quests.png"
-              alt="Quests page"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/quest-creation.png"
-              alt="Quest creation: home page"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/quest-creation-pt2.png"
-              alt="Quest creation: Plan of Action and Location"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/quest-creation-demo.png"
-              alt="Quest creation: Title, Date, and Time"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/gems.png"
-              alt="Gem collection"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/goals.png"
-              alt="Goals page"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/gem-acquisition.png"
-              alt="Acquiring a gem"
-            />
-            <img
-              class="gallery-img"
-              src="../../static/images/gallery/gemquest/gamification-demo.png"
-              alt="Game pages on a mobile device"
+            <img class="gallery-img"
+                 src="../../static/images/gallery/riscv-cpu/riscv-cpu-datapath.jpg"
+                 alt="CPU Datapath Diagram"
             />
             <div id="overlay">
               <img id="zoomed-img" src="" alt="Zoomed image of " />
