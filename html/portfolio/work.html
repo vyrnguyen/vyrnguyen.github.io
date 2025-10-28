@@ -87,8 +87,8 @@
     </header>
 
     <main>
-      <section class="projects">
-        <header class="projects-header">
+      <section>
+        <header>
           <h1>projects</h1>
           <h3>some fun things i've worked on</h3>
         </header>
@@ -96,10 +96,12 @@
         <div class="card-group">
           <a href="riscv-cpu.html">
             <article class="card">
-              <img
-                src="../../static/images/cards/microprocessor-chip.png"
-                alt="Gems"
-              />
+              <div class="card-image-container">
+                <img
+                  src="../../static/images/cards/microprocessor-chip.png"
+                  alt="Gems"
+                />
+              </div>
               <header>
                 <h2>3-Stage RISC-V CPU</h2>
                 <h3>Digital Logic Design</h3>
@@ -109,10 +111,12 @@
           </a>
           <a href="ditc.html">
             <article class="card">
-              <img
-                src="../../static/images/cards/dinner-in-the-closet.png"
-                alt="Gems"
-              />
+              <div class="card-image-container">
+                <img
+                  src="../../static/images/cards/dinner-in-the-closet.png"
+                  alt="Gems"
+                />
+              </div>
               <header>
                 <h2>Dinner in the Closet</h2>
                 <h3>Queer RPG</h3>
@@ -122,7 +126,9 @@
           </a>
           <a href="gemquest.html">
             <article class="card">
-              <img src="../../static/images/cards/gemQuest.png" alt="Gems" />
+              <div class="card-image-container">
+                <img src="../../static/images/cards/gemQuest.png" alt="Gems" />
+              </div>
               <header>
                 <h2>GemQuest</h2>
                 <h3>Social Networking App</h3>
@@ -132,7 +138,12 @@
           </a>
           <a href="pintos.html">
             <article class="card">
-              <img src="../../static/images/cards/pintos.png" alt="Pinto Bean" />
+              <div class="card-image-container">
+                <img
+                  src="../../static/images/cards/pintos.png"
+                  alt="Pinto Bean"
+                />
+              </div>
               <header>
                 <h2>Pintos</h2>
                 <h3>Operating System</h3>
@@ -142,7 +153,9 @@
           </a>
           <a href="gitlet.html">
             <article class="card">
-              <img src="../../static/images/cards/gitlet.png" alt="Gitlet" />
+              <div class="card-image-container">
+                <img src="../../static/images/cards/gitlet.png" alt="Gitlet" />
+              </div>
               <header>
                 <h2>Gitlet</h2>
                 <h3>Version-Control System</h3>
@@ -152,12 +165,58 @@
           </a>
         </div>
       </section>
-      <!-- <section> -->
-      <!--   <header> -->
-      <!-- <h1>past experience</h1> -->
-      <!-- <h3>my professional career thus far</h3> -->
-      <!--   </header> -->
-      <!-- </section> -->
+
+      <section>
+        <header>
+          <h1>experience</h1>
+          <h3>my professional career thus far</h3>
+        </header>
+        <div class="card-group">
+          <a href="https://calico.cs.berkeley.edu/" target="_blank">
+            <article class="card">
+              <div class="card-image-container">
+                <img
+                  src="../../static/images/cards/calico.png"
+                  alt="The Coder School logo"
+                />
+              </div>
+              <header>
+                <h2>CALICO</h2>
+                <h3>Front-End Developer</h3>
+                <h4>Fall 2025-Present</h4>
+              </header>
+            </article>
+          </a>
+          <a href="https://www.thecoderschool.com/" target="_blank">
+            <article class="card">
+              <div class="card-image-container">
+                <img
+                  src="../../static/images/cards/thecoderschool.png"
+                  alt="The Coder School logo"
+                />
+              </div>
+              <header>
+                <h2>The Coder School</h2>
+                <h3>Code Coach</h3>
+                <h4>Fall-Winter 2024</h4>
+              </header>
+            </article>
+          </a>
+          <a href="https://cs10.org/" target="_blank">
+            <article class="card">
+              <div class="card-image-container">
+                <img src="../../static/images/cards/bjc.png" alt="BJC Logo" />
+              </div>
+
+              <header>
+                <h2>CS 10</h2>
+                <h3>Academic Intern</h3>
+                <h4>Spring 2021</h4>
+              </header>
+            </article>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -170,7 +229,10 @@
         </li>
         <li>
           <a href="https://www.linkedin.com/in/vy-nguyen-b195b6344/"
-            ><img alt="linkedin" src="../../static/images/footer/linkedin.png" />
+            ><img
+              alt="linkedin"
+              src="../../static/images/footer/linkedin.png"
+            />
             <span class="sr-only">Link to Vy's LinkedIn profile</span>
           </a>
         </li>
