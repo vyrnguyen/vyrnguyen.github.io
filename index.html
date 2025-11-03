@@ -35,6 +35,7 @@
     <script src="scripts/main.js" defer></script>
     <script src="scripts/particles.js" defer></script>
     <script src="scripts/app.js" defer></script>
+    <script src="scripts/sound-effects.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,6 +46,7 @@
   </head>
 
   <body>
+    <audio id="click-sound" preload="auto" src="sounds/pop.mp3"></audio>
     <div aria-hidden="true" id="particles-js" aria-labelledby="particles-label">
       <span id="particles-label" hidden>Particles</span>
     </div>
@@ -53,6 +55,7 @@
         <ul class="nav-toggles">
           <li>
             <button
+              class="sfx"
               aria-labelledby="toggle-theme-label"
               name="Toggle Theme"
               type="button"
@@ -67,6 +70,7 @@
           </li>
           <li>
             <button
+              class="sfx"
               aria-labelledby="toggle-sfx-label"
               name="Toggle SFX"
               type="button"
@@ -80,11 +84,14 @@
             </button>
           </li>
         </ul>
-
+        
         <ul class="nav-pages">
-          <li><a href="index.html">home</a></li>
-          <li><a href="html/about.html">about</a></li>
-          <li><a href="html/portfolio/work.html">portfolio</a></li>
+          <li class="sfx">
+            <a href="index.html">home</a></li>
+          <li class="sfx">
+            <a href="html/about.html">about</a></li>
+          <li class="sfx">
+            <a href="html/portfolio/work.html">portfolio</a></li>
         </ul>
       </nav>
     </header>
@@ -102,7 +109,7 @@
 
     <footer class="footer">
       <ul class="footer-buttons">
-        <li>
+        <li class="sfx">
           <a href="https://github.com/vyrnguyen" target="_blank"
             ><img alt="github" src="static/images/footer/github.png" />
             <span class="sr-only">Link to Vy's GitHub profile</span>
