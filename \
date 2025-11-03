@@ -2,7 +2,7 @@ root = document.documentElement;
 themeBtn = document.getElementById("theme-btn");
 themeIcon = document.getElementById("theme-icon");
 
-// On page load, set the theme.
+// On page load, set the saved theme if there exists one
 var mode = window.localStorage.getItem("theme");
 if (mode == null) {
   window.localStorage.setItem("theme", "light");
@@ -11,7 +11,7 @@ if (mode == null) {
   themeIcon.src = "static/images/navbar/moon.png";
 }
 
-function toggleTheme() {
+themeBtn.addEventListener("click", function () {
   mode = window.localStorage.getItem("theme");
   root.classList.toggle("dark");
   if (mode == "light") {
@@ -21,6 +21,4 @@ function toggleTheme() {
     window.localStorage.setItem("theme", "light");
     themeIcon.src = "static/images/navbar/sun.png";
   }
-}
-
-themeBtn.addEventListener("click", toggleTheme);
+});
