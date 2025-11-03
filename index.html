@@ -35,7 +35,6 @@
     <script src="scripts/main.js" defer></script>
     <script src="scripts/particles.js" defer></script>
     <script src="scripts/app.js" defer></script>
-    <script src="scripts/sound-effects.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,7 +54,6 @@
         <ul class="nav-toggles">
           <li>
             <button
-              class="sfx"
               aria-labelledby="toggle-theme-label"
               name="Toggle Theme"
               type="button"
@@ -68,30 +66,18 @@
               <span id="toggle-theme-label" hidden>Toggle Theme</span>
             </button>
           </li>
-          <li>
-            <button
-              class="sfx"
-              aria-labelledby="toggle-sfx-label"
-              name="Toggle SFX"
-              type="button"
-            >
-              <img
-                aria-hidden="true"
-                alt="SFX"
-                src="static/images/navbar/sfx_off_light.png"
-              />
-              <span id="toggle-sfx-label" hidden>Toggle SFX</span>
-            </button>
-          </li>
         </ul>
-        
+
         <ul class="nav-pages">
-          <li class="sfx">
-            <a href="index.html">home</a></li>
-          <li class="sfx">
-            <a href="html/about.html">about</a></li>
-          <li class="sfx">
-            <a href="html/portfolio/work.html">portfolio</a></li>
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="html/about.html">about</a>
+          </li>
+          <li>
+            <a href="html/portfolio/work.html">portfolio</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -109,7 +95,7 @@
 
     <footer class="footer">
       <ul class="footer-buttons">
-        <li class="sfx">
+        <li>
           <a href="https://github.com/vyrnguyen" target="_blank"
             ><img alt="github" src="static/images/footer/github.png" />
             <span class="sr-only">Link to Vy's GitHub profile</span>
