@@ -1,17 +1,20 @@
 :root {
   /* Light Theme */
-  --light-bg-color: #fffcf5;
-  --light-fg-color: #54433a;
-  --light-primary-color: #6d9481;
-  --light-primary-color-darker: #628473;
-  --light-secondary-color: #91ac84;
-  --light-third-color: #d0e2c7;
+  --bg: #fffcf5;
+  --fg: #54433a;
+  --primary: #6d9481;
+  --secondary: #91ac84;
 
+  /* Fonts */
+  --primary-font-family: "Zen Kaku Gothic New", sans-serif;
+  --secondary-font-family: "Syne Mono", monospace;
+}
+:root.dark {
   /* Dark Theme */
-  --dark-bg-color: #292522;
-  --dark-fg-color: #ece1d7;
-  --dark-primary-color: #dcafc5;
-  --dark-secondary-color: #f4d1e2;
+  --bg: #292522;
+  --fg: #ece1d7;
+  --primary: #dcafc5;
+  --secondary: #f4d1e2;
 
   /* Fonts */
   --primary-font-family: "Zen Kaku Gothic New", sans-serif;
@@ -27,8 +30,8 @@ body {
   font-family: var(--primary-font-family);
   font-weight: 400;
   font-style: normal;
-  background-color: var(--light-bg-color);
-  color: var(--light-fg-color);
+  background-color: var(--bg);
+  color: var(--fg);
   min-height: 100vh;
   margin: 0;
   display: flex;
@@ -103,12 +106,12 @@ body {
   font-family: var(--secondary-font-family);
   font-size: 1.5em;
   text-decoration: none;
-  color: var(--light-fg-color);
+  color: var(--fg);
   font-weight: bold;
 }
 
 .nav-pages a:hover {
-  color: var(--light-primary-color);
+  color: var(--primary);
 }
 
 main {

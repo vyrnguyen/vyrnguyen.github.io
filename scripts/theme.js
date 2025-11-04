@@ -3,23 +3,26 @@ themeBtn = document.getElementById("theme-btn");
 themeIcon = document.getElementById("theme-icon");
 
 // On page load, set the theme.
-var mode = window.localStorage.getItem("theme");
-if (mode == null) {
-  window.localStorage.setItem("theme", "light");
-} else if (mode == "dark") {
-  root.classList.toggle("dark");
-  themeIcon.src = "static/images/navbar/moon.png";
-}
+window.onload = () => {
+  var mode = localStorage.getItem("theme");
+  console.log(mode);
+  if (mode == null) {
+    localStorage.setItem("theme", "light");
+  } else if (mode == "dark") {
+    root.classList.toggle("dark");
+    themeIcon.src = "/static/images/navbar/moon.png";
+  }
+};
 
 function toggleTheme() {
-  mode = window.localStorage.getItem("theme");
+  mode = localStorage.getItem("theme");
   root.classList.toggle("dark");
   if (mode == "light") {
-    window.localStorage.setItem("theme", "dark");
-    themeIcon.src = "static/images/navbar/moon.png";
+    localStorage.setItem("theme", "dark");
+    themeIcon.src = "/static/images/navbar/moon.png";
   } else {
-    window.localStorage.setItem("theme", "light");
-    themeIcon.src = "static/images/navbar/sun.png";
+    localStorage.setItem("theme", "light");
+    themeIcon.src = "/static/images/navbar/sun.png";
   }
 }
 
