@@ -1,5 +1,5 @@
 :root {
-  /* Light Theme */
+  /* Base Theme */
   --bg: #fffcf5;
   --fg: #54433a;
   --primary: #6d9481;
@@ -8,6 +8,7 @@
   /* Fonts */
   --primary-font-family: "Zen Kaku Gothic New", sans-serif;
   --secondary-font-family: "Syne Mono", monospace;
+  --tertiary-font-family: "Roboto Mono", monospace;
 }
 :root.dark {
   /* Dark Theme */
@@ -15,10 +16,6 @@
   --fg: #ece1d7;
   --primary: #dcafc5;
   --secondary: #f4d1e2;
-
-  /* Fonts */
-  --primary-font-family: "Zen Kaku Gothic New", sans-serif;
-  --secondary-font-family: "Syne Mono", monospace;
 }
 
 * {
