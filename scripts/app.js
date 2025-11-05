@@ -1,4 +1,4 @@
-import { particleJSColor } from "/scripts/theme.js"
+import { particleJSColor } from "/scripts/theme.js";
 
 particlesJS(
   "particles-js",
