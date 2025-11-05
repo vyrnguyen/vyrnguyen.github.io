@@ -1,9 +1,4 @@
-var theme = localStorage.getItem("theme");
-
-var particleColor = "#fffcfa";
-if (theme == null || theme == "light") {
-  particleColor = "#54433a";
-}
+import { particleJSColor } from "/scripts/theme.js"
 
 particlesJS(
   "particles-js",
@@ -18,13 +13,13 @@ particlesJS(
         },
       },
       color: {
-        value: particleColor,
+        value: particleJSColor,
       },
       shape: {
         type: "circle",
         stroke: {
           width: 0,
-          color: particleColor,
+          color: particleJSColor,
         },
         polygon: {
           nb_sides: 5,
@@ -58,7 +53,7 @@ particlesJS(
       line_linked: {
         enable: true,
         distance: 150,
-        color: particleColor,
+        color: particleJSColor,
         opacity: 0.4,
         width: 1,
       },
