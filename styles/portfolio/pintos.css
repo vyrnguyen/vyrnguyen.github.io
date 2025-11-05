@@ -97,9 +97,13 @@ body {
   border: none;
 }
 
-.nav-toggles button img {
+.nav-toggles button > img {
   width: 4em;
   height: 4em;
+}
+
+.nav-toggles button > img:hover {
+  transform: scale(1.1);
 }
 
 .nav-pages {
