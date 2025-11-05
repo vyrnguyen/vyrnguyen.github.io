@@ -1,3 +1,10 @@
+var theme = localStorage.getItem("theme");
+
+var particleColor = "#54433a";
+if (theme == null || theme == "light") {
+  particleColor = "#fffcfa";
+}
+
 particlesJS('particles-js',
   
   {
@@ -10,13 +17,13 @@ particlesJS('particles-js',
         }
       },
       "color": {
-        "value": "#54433a"
+        "value": particleColor 
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#54433a"
+          "color": particleColor 
         },
         "polygon": {
           "nb_sides": 5
@@ -50,7 +57,7 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#54433a",
+        "color": particleColor, 
         "opacity": 0.4,
         "width": 1
       },
