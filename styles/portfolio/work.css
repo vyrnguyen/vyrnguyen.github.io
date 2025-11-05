@@ -5,8 +5,10 @@
 
   --primary: #6d9481;
   --secondary: #91ac84;
+  --tertiary: #4f7942;
   --comment: #7d6658;
   --ui: #a59f94;
+  --card-fg: #fffcf5;
 
   /* Fonts */
   --primary-font-family: "Zen Kaku Gothic New", sans-serif;
@@ -22,6 +24,7 @@
   --secondary: #f4d1e2;
   --tertiary: #f6c1c3;
   --comment: #c1a78e;
+  --card-fg: #ece1d7;
 }
 
 * {
@@ -174,14 +177,14 @@ main > section > header > h3 {
   width: 100%;
   height: 100%;
   border-style: solid;
-  border-color: #fffcf5;
+  border-color: var(--card-fg); 
   border-radius: 0.5em;
-  background-color: #fffcf5;
+  background-color: var(--card-fg); 
   object-fit: fill;
 }
 
 .card header {
-  color: #fffcf5;
+  color: var(--card-fg); 
   display: flex;
   flex-direction: column;
   justify-content: center;
