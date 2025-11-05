@@ -1,3 +1,5 @@
+export { particleJSColor };
+
 root = document.documentElement;
 themeBtn = document.getElementById("theme-btn");
 themeIcon = document.getElementById("theme-icon");
@@ -51,4 +53,3 @@ function toggleTheme() {
 }
 
 themeBtn.addEventListener("click", toggleTheme);
-export { particleJSColor };
