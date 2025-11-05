@@ -2,9 +2,12 @@
   /* Base Theme */
   --bg: #fffcf5;
   --fg: #54433a;
-  --primary: #6d9481;
-  --secondary: #91ac84;
+
+  --primary: #5c7d6d;
+  --secondary: #6d9481;
+  --tertiary: #91ac84;
   --comment: #7d6658;
+  --ui: #a59f94;
 
   /* Fonts */
   --primary-font-family: "Zen Kaku Gothic New", sans-serif;
@@ -15,8 +18,10 @@
   /* Dark Theme */
   --bg: #292522;
   --fg: #ece1d7;
+
   --primary: #dcafc5;
   --secondary: #f4d1e2;
+  --tertiary: #f6c1c3;
   --comment: #c1a78e;
 }
 
@@ -125,7 +130,7 @@ article {
 hr {
   width: 51vw;
   margin-top: 2em;
-  color: #a59f94;
+  color: var(--ui); 
   border-width: 0.075em;
   border-style: solid;
 }
