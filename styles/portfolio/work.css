@@ -174,14 +174,14 @@ main > section > header > h3 {
   width: 100%;
   height: 100%;
   border-style: solid;
-  border-color: #fffcf5;
+  border-color: var(--comment);
   border-radius: 0.5em;
   background-color: #fffcf5;
   object-fit: fill;
 }
 
 .card header {
-  color: #fffcf5;
+  color: var(--comment);
   display: flex;
   flex-direction: column;
   justify-content: center;
