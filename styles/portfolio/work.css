@@ -3,9 +3,11 @@
   --bg: #faf4ed;
   --fg: #54433a;
 
-  --primary: #6d9481;
-  --secondary: #91ac84;
-  --tertiary: #4f7942;
+  --primary: #5c7d6d;
+  --secondary: #4f7942;
+  /* --primary: #6d9481; */
+  --tertiary: #91ac84;
+  /* --tertiary: #4f7942; */
   --comment: #7d6658;
   --ui: #a59f94;
   --card-fg: #faf4ed;

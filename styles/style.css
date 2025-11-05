@@ -1,13 +1,17 @@
 :root {
   /* Base Theme */
-  --bg: #fffcf5;
+  --bg: #faf4ed;
   --fg: #54433a;
 
-  --primary: #6d9481;
-  --secondary: #91ac84;
-  --tertiary: #4f7942;
+  --primary: #5c7d6d;
+  --secondary: #4f7942;
+  /* --primary: #6d9481; */
+  --tertiary: #91ac84;
+  /* --tertiary: #4f7942; */
   --comment: #7d6658;
   --ui: #a59f94;
+  --card-fg: #faf4ed;
+  --card-border: #f2e9e1;
 
   /* Fonts */
   --primary-font-family: "Zen Kaku Gothic New", sans-serif;
@@ -23,6 +27,8 @@
   --secondary: #f4d1e2;
   --tertiary: #f6c1c3;
   --comment: #c1a78e;
+  --card-fg: #54433a;
+  --card-border: #ece1d7;
 }
 
 * {
