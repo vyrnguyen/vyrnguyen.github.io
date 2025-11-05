@@ -115,7 +115,7 @@ body {
 }
 
 .nav-pages a:hover {
-  color: var(--tertiary);
+  color: var(--primary);
 }
 
 main {
@@ -139,7 +139,7 @@ main {
 }
 
 .description a:hover, a:active {
-  color: var(--primary);
+  color: var(--tertiary);
 }
 
 .profile-picture {
