@@ -133,6 +133,14 @@ main {
   max-width: 30em;
 }
 
+.description a:link, a:visited {
+  color: var(--fg);
+}
+
+.description a:hover, a:active {
+  color: var(--primary);
+}
+
 .profile-picture {
   max-height: 400px;
   max-width: 400px;
