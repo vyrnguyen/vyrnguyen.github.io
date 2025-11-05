@@ -1,6 +1,6 @@
 :root {
   /* Base Theme */
-  --bg: #faf4ed;
+  --bg: #fffcf5;
   --fg: #54433a;
 
   --primary: #6d9481;
@@ -8,8 +8,8 @@
   --tertiary: #4f7942;
   --comment: #7d6658;
   --ui: #a59f94;
-  --card-fg: #faf4ed;
-  --card-border: #f2e9e1;
+  --card-fg: #fffcf5;
+  --card-border: #faf4ed;
 
   /* Fonts */
   --primary-font-family: "Zen Kaku Gothic New", sans-serif;
