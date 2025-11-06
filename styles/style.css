@@ -222,12 +222,12 @@ body {
   z-index: 1;
   overflow: hidden;
   pointer-events: all;
-  color: #54433a;
+  /* color: #54433a; */
 }
 
-#particles-js.dark {
-  color: #fffcfa; 
-}
+/* #particles-js.dark { */
+/*   color: #fffcfa;  */
+/* } */
 
 .footer {
   display: flex;
