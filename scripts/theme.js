@@ -1,5 +1,3 @@
-export { particleJSColor };
-
 root = document.documentElement;
 themeBtn = document.getElementById("theme-btn");
 themeIcon = document.getElementById("theme-icon");
@@ -22,11 +20,10 @@ function setLightThemeIcons() {
   emailIcon.src = "static/images/footer/email.png";
 }
 
-var particleJSColor;
+var particleJSColor = "#54433a";
 // On page load, set the theme.
 document.addEventListener("DOMContentLoaded", () => {
   var mode = localStorage.getItem("theme");
-  particleJSColor = "#54433a";
   if (mode == null) {
     // dont need to set anything; base by default
     localStorage.setItem("theme", "light");

@@ -1,5 +1,3 @@
-import { particleJSColor } from "/scripts/theme.js";
-
 particlesJS(
   "particles-js",
 
