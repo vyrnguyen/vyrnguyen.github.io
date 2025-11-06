@@ -5,9 +5,15 @@ var themeIcon = document.getElementById("theme-icon");
 var githubIcon = document.getElementById("github-icon");
 var linkedinIcon = document.getElementById("linkedin-icon");
 var emailIcon = document.getElementById("email-icon");
- 
-var particlesjs = document.getElementById("particles-js");
 
+function setPJSColor(color = "#fffcfa") {
+  if (window.pJSDom && window.pJSDom.length > 0) {
+    window.pJSDom[0].pJS.particles.color.value = color 
+    window.pJSDom[0].pJS.particles.line_linked.color = color 
+    window.pJSDom[0].pJS.fn.particlesRefresh();
+  }
+}
+ 
 function setDarkTheme() {
   localStorage.setItem("theme", "dark");
 
@@ -31,46 +37,25 @@ document.addEventListener("DOMContentLoaded", () => {
   var mode = localStorage.getItem("theme");
 
   if (mode == null) {
-    // dont need to set anything; base by default
+    // dont need to set anything else; uses base by default
     localStorage.setItem("theme", "light");
-
-    if (window.pJSDom && window.pJSDom.length > 0) {
-      window.pJSDom[0].pJS.particles.color.value = "#54433a" 
-      window.pJSDom[0].pJS.particles.line_linked.color = "#54433a" 
-      window.pJSDom[0].pJS.fn.particlesRefresh();
-    }
   } else if (mode == "dark") {
     root.classList.toggle("dark");
-    // particlesjs.classList.toggle("dark");
     setDarkTheme();
-
-    if (window.pJSDom && window.pJSDom.length > 0) {
-      window.pJSDom[0].pJS.particles.color.value = "#fffcfa" 
-      window.pJSDom[0].pJS.particles.line_linked.color = "#fffcfa" 
-      window.pJSDom[0].pJS.fn.particlesRefresh();
-    }
+    setPJSColor("#fffcfa");
   }
 });
 
 function toggleTheme() {
   root.classList.toggle("dark");
-  // particlesjs.classList.toggle("dark");
 
   var mode = localStorage.getItem("theme");
   if (mode == "light") {
     setDarkTheme();
-    if (window.pJSDom && window.pJSDom.length > 0) {
-      window.pJSDom[0].pJS.particles.color.value = "#fffcfa" 
-      window.pJSDom[0].pJS.particles.line_linked.color = "#fffcfa" 
-      window.pJSDom[0].pJS.fn.particlesRefresh();
-    }
+    setPJSColor("#fffcfa");
   } else {
     setLightTheme();
-    if (window.pJSDom && window.pJSDom.length > 0) {
-      window.pJSDom[0].pJS.particles.color.value = "#54433a" 
-      window.pJSDom[0].pJS.particles.line_linked.color = "#54433a" 
-      window.pJSDom[0].pJS.fn.particlesRefresh();
-    }
+    setPJSColor("#54433a");
   }
 }
 
