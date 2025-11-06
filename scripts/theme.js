@@ -20,15 +20,15 @@ function setLightThemeIcons() {
   emailIcon.src = "static/images/footer/email.png";
 }
 
-var particleJSColor = "#54433a";
 // On page load, set the theme.
 document.addEventListener("DOMContentLoaded", () => {
+  window.particleJSColor = "#54433a";
   var mode = localStorage.getItem("theme");
   if (mode == null) {
     // dont need to set anything; base by default
     localStorage.setItem("theme", "light");
   } else if (mode == "dark") {
-    particleJSColor = "#fffcfa";
+    window.particleJSColor = "#fffcfa";
     root.classList.toggle("dark");
     setDarkThemeIcons();
   }
@@ -39,11 +39,11 @@ function toggleTheme() {
 
   var mode = localStorage.getItem("theme");
   if (mode == "light") {
-    particleJSColor = "#54433a";
+    window.particleJSColor = "#54433a";
     localStorage.setItem("theme", "dark");
     setDarkThemeIcons();
   } else {
-    particleJSColor = "#fffcfa";
+    window.particleJSColor = "#fffcfa";
     localStorage.setItem("theme", "light");
     setLightThemeIcons();
   }
