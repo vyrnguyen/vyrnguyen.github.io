@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", "light");
   } else if (mode == "dark") {
     root.classList.toggle("dark");
-    particlesjs.toggle("dark");
+    particlesjs.classList.toggle("dark");
     setDarkTheme();
   }
 });
 
 function toggleTheme() {
   root.classList.toggle("dark");
-  particlesjs.toggle("dark");
+  particlesjs.classList.toggle("dark");
 
   var mode = localStorage.getItem("theme");
   if (mode == "light") {
