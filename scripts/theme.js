@@ -1,12 +1,12 @@
-root = document.documentElement;
-themeBtn = document.getElementById("theme-btn");
-themeIcon = document.getElementById("theme-icon");
-
-githubIcon = document.getElementById("github-icon");
-linkedinIcon = document.getElementById("linkedin-icon");
-emailIcon = document.getElementById("email-icon");
-
-particlesJS = document.getElementById("particles-js");
+var root = document.documentElement;
+var themeBtn = document.getElementById("theme-btn");
+var themeIcon = document.getElementById("theme-icon");
+ 
+var githubIcon = document.getElementById("github-icon");
+var linkedinIcon = document.getElementById("linkedin-icon");
+var emailIcon = document.getElementById("email-icon");
+ 
+var particlesjs = document.getElementById("particles-js");
 
 function setDarkTheme() {
   localStorage.setItem("theme", "dark");
@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", "light");
   } else if (mode == "dark") {
     root.classList.toggle("dark");
-    particlesJS.toggle("dark");
+    particlesjs.toggle("dark");
     setDarkTheme();
   }
 });
 
 function toggleTheme() {
   root.classList.toggle("dark");
-  particlesJS.toggle("dark");
+  particlesjs.toggle("dark");
 
   var mode = localStorage.getItem("theme");
   if (mode == "light") {
