@@ -8,6 +8,7 @@ var messagesToType = [
   "os-enthusiast",
   "video game maker",
 ];
+var menuIcon = document.getElementById("menu-icon");
 
 function typewriter(i = 0, text = "", callback) {
   if (i < text.length) {
@@ -38,19 +39,19 @@ document.addEventListener("DOMContentLoaded", function () {
   startTypingAnimation(0);
 });
 
-
-var menuIcon = document.getElementById("menu-icon");
-
+// Menu Icons for mobile view
 menuIcon.addEventListener("click", function () {
   var navLinks = document.getElementById("nav-links");
   var navLinksStyle = window.getComputedStyle(navLinks);
 
   if (navLinksStyle.getPropertyValue("display") === "none") {
     navLinks.style.display = "flex";
-    menuIcon.src = "static/images/navbar/x.svg";
+    menuIcon.classList.remove("bi-three-dots");
+    menuIcon.classList.add("bi-x");
   } else {
     navLinks.style.display = "none";
-    menuIcon.src = "static/images/navbar/hamburger-menu.svg";
+    menuIcon.classList.add("bi-three-dots");
+    menuIcon.classList.remove("bi-x");
   }
 });
 
@@ -60,6 +61,7 @@ window.addEventListener("resize", function() {
     navLinks.style.display = "flex";
   } else {
     navLinks.style.display = "none";
-    menuIcon.src = "static/images/navbar/hamburger-menu.svg";
+    menuIcon.classList.add("bi-three-dots");
+    menuIcon.classList.remove("bi-x");
   }
 });

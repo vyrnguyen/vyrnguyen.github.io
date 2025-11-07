@@ -91,22 +91,17 @@ body {
 }
 
 #theme-icon {
-  width: 4em;
-  height: 4em;
+  font-size: xxx-large;
+  color: #54433a;
 }
 
-.main-header nav button img:hover {
+.main-header nav button i:hover {
   transform: scale(1.1);
 }
 
 @media only screen and (max-width: 600px) {
   #theme-btn {
     margin-right: 1em;
-  }
-
-  #theme-icon {
-    width: 3.5em;
-    height: 3.5em;
   }
 }
 
@@ -166,8 +161,8 @@ body {
     display: block;
     position: relative;
     z-index: 2;
-    width: 3em;
-    height: 3em;
+    font-size: xxx-large;
+    color: #54433a;
   }
 
   .nav-container img:hover {

@@ -1,32 +1,40 @@
 var root = document.documentElement;
 var themeBtn = document.getElementById("theme-btn");
 var themeIcon = document.getElementById("theme-icon");
- 
+
+var menuIcon = document.getElementById("menu-icon");
+
 var githubIcon = document.getElementById("github-icon");
 var linkedinIcon = document.getElementById("linkedin-icon");
 var emailIcon = document.getElementById("email-icon");
 
 function setPJSColor(color = "#fffcfa") {
   if (window.pJSDom && window.pJSDom.length > 0) {
-    window.pJSDom[0].pJS.particles.color.value = color 
-    window.pJSDom[0].pJS.particles.line_linked.color = color 
+    window.pJSDom[0].pJS.particles.color.value = color;
+    window.pJSDom[0].pJS.particles.line_linked.color = color;
     window.pJSDom[0].pJS.fn.particlesRefresh();
   }
 }
  
-function setDarkTheme() {
+function setDarkTheme(color = "#fffcfa") {
   localStorage.setItem("theme", "dark");
-
-  themeIcon.src = "static/images/navbar/moon.png";
+  setPJSColor(color);
+  themeIcon.style.color = color;
+  themeIcon.classList.remove("bi-sun-fill");
+  themeIcon.classList.add("bi-moon-fill");
+  menuIcon.style.color = color;
   githubIcon.src = "static/images/footer/github-light.png";
   linkedinIcon.src = "static/images/footer/linkedin-light.png";
   emailIcon.src = "static/images/footer/email-light.png";
 }
 
-function setLightTheme() {
+function setLightTheme(color = "#54433a") {
   localStorage.setItem("theme", "light");
-
-  themeIcon.src = "static/images/navbar/sun.png";
+  setPJSColor(color); 
+  themeIcon.style.color = color;
+  themeIcon.classList.add("bi-sun-fill");
+  themeIcon.classList.remove("bi-moon-fill");
+  menuIcon.style.color = color;
   githubIcon.src = "static/images/footer/github.png";
   linkedinIcon.src = "static/images/footer/linkedin.png";
   emailIcon.src = "static/images/footer/email.png";
@@ -42,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
   } else if (mode == "dark") {
     root.classList.toggle("dark");
     setDarkTheme();
-    setPJSColor("#fffcfa");
   }
 });
 
@@ -52,10 +59,8 @@ function toggleTheme() {
   var mode = localStorage.getItem("theme");
   if (mode == "light") {
     setDarkTheme();
-    setPJSColor("#fffcfa");
   } else {
     setLightTheme();
-    setPJSColor("#54433a");
   }
 }
 
