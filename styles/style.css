@@ -73,65 +73,60 @@ body {
   min-width: 51vw;
 }
 
-.main-header nav ul {
-  display: flex;
-  gap: 3em;
-  list-style: none;
-  padding: 0;
-}
-
 @media only screen and (max-width: 600px) {
   .main-header {
     margin: 3em auto auto auto;
   }
-  .main-header nav ul {
-    gap: 1em;
+
+  .main-header nav {
+    min-width: 71vw;
   }
 }
 
-.nav-toggles {
-  margin-right: 5em;
-}
-
-.nav-pages {
-  margin-left: 5em;
-}
-
-@media only screen and (max-width: 600px) {
-  .nav-toggles {
-    margin-right: 1em;
-  }
-  .nav-pages {
-    margin-left: 1em;
-  }
-}
-
-.nav-toggles li,
-.nav-pages li {
+#theme-btn {
   z-index: 2;
-}
-
-.nav-toggles button {
   background: none;
   border: none;
+  margin-right: 3em;
 }
-.nav-toggles button img {
+
+#theme-icon {
   width: 4em;
   height: 4em;
 }
 
-.nav-toggles button img:hover {
+.main-header nav button img:hover {
   transform: scale(1.1);
 }
 
 @media only screen and (max-width: 600px) {
-  .nav-toggles button img {
+  #theme-btn {
+    margin-right: 1em;
+  }
+
+  #theme-icon {
     width: 3.5em;
     height: 3.5em;
   }
 }
 
-.nav-pages a {
+.nav-container {
+  margin-left: 3em;
+}
+
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  list-style: none;
+  padding: 0;
+}
+
+#nav-links li {
+  z-index: 2;
+}
+
+#nav-links a {
   font-family: var(--secondary-font-family);
   font-size: x-large;
   font-weight: bold;
@@ -139,13 +134,44 @@ body {
   text-decoration: none;
 }
 
-.nav-pages a:hover {
+#nav-links a:hover {
   color: var(--primary);
 }
 
+#menu-icon {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
-  .nav-pages a {
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1em;
+    margin-left: 1em;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5em;
+  }
+
+  #nav-links a {
     font-size: large;
+  }
+
+  #menu-icon {
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 3em;
+    height: 3em;
+  }
+
+  .nav-container img:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -206,7 +232,7 @@ body {
 
 .hero-buttons {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0 2em;
@@ -216,7 +242,7 @@ body {
 .hero-buttons a {
   z-index: 2;
   font-family: var(--secondary-font-family);
-  font-size: x-large; 
+  font-size: x-large;
   text-decoration: none;
   color: var(--primary);
   position: relative; /* keep sliding animation contained */
@@ -250,11 +276,12 @@ body {
 @media only screen and (max-width: 600px) {
   .hero-buttons {
     gap: 1em 1em;
-    margin-top: 3em;
+    margin-top: 2em;
   }
 
   .hero-buttons a {
     font-size: large;
+    font-weight: bold;
     color: var(--bg);
     background-color: var(--primary);
     border-radius: 0.4em;

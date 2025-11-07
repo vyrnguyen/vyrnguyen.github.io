@@ -9,7 +9,7 @@ var messagesToType = [
   "video game maker",
 ];
 
-function typewriter(i, text, callback) {
+function typewriter(i = 0, text = "", callback) {
   if (i < text.length) {
     document.getElementById("typewriter").innerHTML =
       text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
@@ -38,3 +38,28 @@ document.addEventListener("DOMContentLoaded", function () {
   startTypingAnimation(0);
 });
 
+
+var menuIcon = document.getElementById("menu-icon");
+
+menuIcon.addEventListener("click", function () {
+  var navLinks = document.getElementById("nav-links");
+  var navLinksStyle = window.getComputedStyle(navLinks);
+
+  if (navLinksStyle.getPropertyValue("display") === "none") {
+    navLinks.style.display = "flex";
+    menuIcon.src = "static/images/navbar/x.svg";
+  } else {
+    navLinks.style.display = "none";
+    menuIcon.src = "static/images/navbar/hamburger-menu.svg";
+  }
+});
+
+window.addEventListener("resize", function() {
+  var navLinks = document.getElementById("nav-links");
+  if (window.innerWidth > 600) {
+    navLinks.style.display = "flex";
+  } else {
+    navLinks.style.display = "none";
+    menuIcon.src = "static/images/navbar/hamburger-menu.svg";
+  }
+});
