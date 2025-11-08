@@ -197,7 +197,7 @@ main > section > header > h3 {
 
 @media only screen and (max-width: 600px) {
   main > section > header {
-    margin: 3em auto 3em auto;
+    margin: 3em auto 1em auto;
   }
 
   main > section > header > h1 {
@@ -289,7 +289,7 @@ main > section > header > h3 {
     padding: 1em;
   }
 
-  .card-img-container {
+  .card-image-container {
     width: 5em;
     height: 5em;
   }
