@@ -182,7 +182,7 @@ article {
 
 hr {
   width: 51vw;
-  margin: 2em auto 2em auto;
+  margin: 2em auto auto auto;
   color: #a59f94;
   border-width: 0.075em;
   border-style: solid;
@@ -198,6 +198,10 @@ hr {
 @media only screen and (max-width: 600px) {
   article {
     max-width: 100%;
+  }
+  
+  hr {
+    margin: 2em auto 2em auto;
   }
 
   .introduction {
