@@ -177,7 +177,7 @@ main {
 
 article {
   max-width: 51vw;
-  margin: 7em 0 0 0;
+  margin: 3em auto auto auto; 
 }
 
 hr {
