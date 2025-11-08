@@ -353,10 +353,8 @@ hr {
 
 @media only screen and (max-width: 600px) {
   .gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    max-width: 100%;
   }
 
   .gallery header h2 {
@@ -365,9 +363,11 @@ hr {
 
   .gallery-grid {
     display: grid;
-    grid-template-columns: initial;
-    grid-template-rows: 30vw;
+    grid-template-columns: none;
+    grid-template-rows: 30vw 30vw 30vw 30vw;
     gap: 1em 1em;
+    align-items: center;
+    justify-content: center;
   }
 }
 
