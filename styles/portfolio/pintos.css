@@ -231,7 +231,7 @@ hr {
 
 @media only screen and (max-width: 600px) {
   .description {
-    max-width: 15em;
+    max-width: 20em;
     font-size: small;
     display: flex;
     flex-direction: column;
