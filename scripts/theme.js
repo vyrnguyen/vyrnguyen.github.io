@@ -20,6 +20,7 @@ function setDarkTheme(color = "#fffcfa") {
   localStorage.setItem("theme", "dark");
   setPJSColor(color);
   themeIcon.style.color = color;
+  themeIcon.style.fontSize = "xx-large";
   themeIcon.classList.remove("bi-sun-fill");
   themeIcon.classList.add("bi-moon-fill");
   menuIcon.style.color = color;
@@ -32,6 +33,7 @@ function setLightTheme(color = "#54433a") {
   localStorage.setItem("theme", "light");
   setPJSColor(color); 
   themeIcon.style.color = color;
+  themeIcon.style.fontSize = "xxx-large";
   themeIcon.classList.add("bi-sun-fill");
   themeIcon.classList.remove("bi-moon-fill");
   menuIcon.style.color = color;
@@ -45,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
   var mode = localStorage.getItem("theme");
 
   if (mode == null) {
-    // dont need to set anything else; uses base by default
     localStorage.setItem("theme", "light");
+    setLightTheme();
   } else if (mode == "dark") {
     root.classList.toggle("dark");
     setDarkTheme();
