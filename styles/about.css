@@ -92,7 +92,7 @@ body {
 }
 
 #theme-icon {
-  font-size: xxx-large;
+  font-size: xx-large;
   color: #54433a;
 }
 
@@ -103,10 +103,6 @@ body {
 @media only screen and (max-width: 600px) {
   #theme-btn {
     margin-right: 1em;
-  }
-
-  #theme-icon {
-    font-size: xx-large;
   }
 }
 
