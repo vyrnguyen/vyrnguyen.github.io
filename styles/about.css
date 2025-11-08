@@ -187,11 +187,13 @@ main {
   max-width: 30em;
 }
 
-.description a:link, a:visited {
+.description a:link,
+a:visited {
   color: var(--fg);
 }
 
-.description a:hover, a:active {
+.description a:hover,
+a:active {
   color: var(--tertiary);
 }
 
