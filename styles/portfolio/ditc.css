@@ -92,7 +92,7 @@ body {
 }
 
 #theme-icon {
-  font-size: xxx-large;
+  font-size: xx-large;
   color: #54433a;
 }
 
@@ -162,7 +162,7 @@ body {
     display: block;
     position: relative;
     z-index: 2;
-    font-size: xxx-large;
+    font-size: xx-large;
     color: #54433a;
   }
 
@@ -177,7 +177,7 @@ main {
 
 article {
   max-width: 51vw;
-  margin: 7em 0 0 0;
+  margin: 3em auto auto auto;
 }
 
 hr {
@@ -193,6 +193,17 @@ hr {
   grid-template-columns: 34vw 17vw;
   align-items: center;
   column-gap: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  article {
+    max-width: 100%;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -218,6 +229,21 @@ hr {
   color: var(--tertiary);
 }
 
+@media only screen and (max-width: 600px) {
+  .description {
+    max-width: 15em;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description h1 {
+    text-align: center;
+    font-size: x-large;
+  }
+}
+
 .logo {
   margin: auto;
   max-width: 15em;
@@ -237,11 +263,18 @@ hr {
   transform: scale(1.05);
 }
 
+@media only screen and (max-width: 600px) {
+  .logo {
+    max-width: 7em;
+    max-height: 7em;
+  }
+}
+
 .tech-stack {
   max-width: 34vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 1em;
+  gap: 1em 1em;
 }
 
 .tech-stack h2 {
@@ -270,6 +303,25 @@ hr {
   transform: translateY(0.25em);
 }
 
+@media only screen and (max-width: 600px) {
+  .tech-stack {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    gap: 1em 1em;
+  }
+
+  .tech-stack h2 {
+    font-size: large;
+  }
+
+  .tech-stack ul {
+    font-size: small;
+    justify-content: center;
+  }
+}
+
 .gallery {
   max-width: 51vw;
 }
@@ -296,6 +348,25 @@ hr {
 
 .gallery-img:hover {
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 13em;
+  }
+
+  .gallery header h2 {
+    font-size: large;
+  }
+
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 #overlay {
