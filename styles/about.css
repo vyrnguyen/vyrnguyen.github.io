@@ -178,6 +178,8 @@ main {
   justify-content: space-evenly;
   align-items: center;
   gap: 5em 5em;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
 .description {
@@ -195,6 +197,14 @@ a:visited {
 .description a:hover,
 a:active {
   color: var(--tertiary);
+}
+
+@media (max-width: 600px) {
+  .description {
+    font-size: small;
+    max-width: 25em;
+    align-items: center;
+  }
 }
 
 .profile-picture {
