@@ -92,7 +92,7 @@ body {
 }
 
 #theme-icon {
-  font-size: xxx-large;
+  font-size: xx-large;
   color: #54433a;
 }
 
@@ -162,7 +162,7 @@ body {
     display: block;
     position: relative;
     z-index: 2;
-    font-size: xxx-large;
+    font-size: xx-large;
     color: #54433a;
   }
 
@@ -176,22 +176,40 @@ main {
 }
 
 main > section {
-  max-width: 70em;
-  margin-top: 5em;
+  max-width: 51vw;
 }
 
 main > section > header {
-  margin: 0em 0 3em 5em;
+  margin: 3em auto 3em auto;
+  max-width: 51vw;
 }
 
 main > section > header > h1 {
-  margin: 0;
+  font-family: var(--secondary-font-family);
+  text-align: left;
 }
 
 main > section > header > h3 {
   font-style: italic;
   font-weight: 400;
   color: var(--comment);
+  white-space: nowrap;
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  main > section > header {
+    margin: 3em auto auto auto;
+  }
+
+  main > section > header > h1 {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  main > section > header > h3 {
+    font-size: center;
+  }
 }
 
 .card-group {
@@ -240,7 +258,7 @@ main > section > header > h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1em 0 0em 0;
+  margin: 1em auto auto auto;
 }
 
 .card header h2,
@@ -261,6 +279,30 @@ main > section > header > h3 {
 
 .card header h4 {
   font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-group {
+    gap: 3em;
+  }
+
+  .card {
+    padding: 1em;
+  }
+
+  .card-img-container {
+    width: 8em;
+    height: 8em;
+  }
+  .card header h2 {
+    font-size: large;
+  }
+  .card header h3 {
+    font-size: medium;
+  }
+  .card header h4 {
+    font-size: small;
+  }
 }
 
 .footer {
