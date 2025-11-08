@@ -104,6 +104,10 @@ body {
   #theme-btn {
     margin-right: 1em;
   }
+
+  #theme-icon {
+    font-size: xx-large;
+  }
 }
 
 .nav-container {
@@ -162,7 +166,7 @@ body {
     display: block;
     position: relative;
     z-index: 2;
-    font-size: xxx-large;
+    font-size: xx-large;
     color: #54433a;
   }
 
@@ -191,6 +195,7 @@ main {
 .description {
   display: flex;
   flex-direction: column;
+  margin: 3em auto auto auto;
   flex: inherit;
   max-width: 30em;
 }
