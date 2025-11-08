@@ -182,7 +182,7 @@ article {
 
 hr {
   width: 51vw;
-  margin-top: 2em;
+  margin: 2em auto 2em auto;
   color: #a59f94;
   border-width: 0.075em;
   border-style: solid;
