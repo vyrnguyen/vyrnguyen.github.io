@@ -197,11 +197,11 @@ main > section > header > h3 {
 
 @media only screen and (max-width: 600px) {
   main > section > header {
-    margin: 3em auto 1em auto;
+    margin: 3em auto 3em auto;
   }
 
   main > section > header > h1 {
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
   }
 
