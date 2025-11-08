@@ -10,7 +10,7 @@
       my website to learn more!"
     />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Open Graph
     (4) required properties:  -->
@@ -37,6 +37,7 @@
       type="image/x-icon"
     />
 
+    <script src="scripts/toggle-menu.js" defer></script>
     <script src="scripts/render-lightbox.js" defer></script>
     <script src="scripts/theme.js" defer></script>
 
@@ -51,30 +52,32 @@
   <body>
     <header class="main-header">
       <nav>
-        <ul class="nav-toggles">
-          <li>
-            <button
-              aria-labelledby="toggle-theme-label"
-              name="Toggle Theme"
-              type="button"
-              id="theme-btn"
-            >
-              <img
-                aria-hidden="true"
-                alt="Sun"
-                src="static/images/navbar/sun.png"
-                id="theme-icon"
-              />
-              <span id="toggle-theme-label" hidden>Toggle Theme</span>
-            </button>
-          </li>
-        </ul>
+        <button
+          aria-labelledby="toggle-theme-label"
+          name="Toggle Theme"
+          type="button"
+          id="theme-btn"
+        >
+          <i aria-hidden="true" id="theme-icon" class="bi bi-sun-fill"></i>
+          <span id="toggle-theme-label" hidden>Toggle Theme</span>
+        </button>
 
-        <ul class="nav-pages">
-          <li><a href="index.html">home</a></li>
-          <li><a href="html/about.html">about</a></li>
-          <li><a href="html/portfolio/work.html">portfolio</a></li>
-        </ul>
+        <div class="nav-container">
+          <ul id="nav-links">
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="html/about.html">about</a>
+            </li>
+            <li>
+              <a href="html/portfolio/work.html">portfolio</a>
+            </li>
+          </ul>
+          <i aria-labelledby="toggle-menu-label" id="menu-icon" class="bi
+            bi-three-dots"></i>
+          <span id="toggle-menu-label" hidden>Toggle Menu</span>
+        </div>
       </nav>
     </header>
 

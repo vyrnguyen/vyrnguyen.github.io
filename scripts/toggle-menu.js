@@ -3,7 +3,8 @@ var menuIcon = document.getElementById("menu-icon");
 menuIcon.addEventListener("click", function () {
   var navLinks = document.getElementById("nav-links");
   var navLinksStyle = window.getComputedStyle(navLinks);
-
+  console.log(navLinksStyle);
+  console.log(navLinksStyle.getPropertyValue("display"));
   if (navLinksStyle.getPropertyValue("display") === "none") {
     navLinks.style.display = "flex";
     menuIcon.classList.remove("bi-three-dots");
