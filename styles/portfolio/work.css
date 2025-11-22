@@ -179,12 +179,12 @@ main {
 }
 
 main > section {
-  max-width: 51vw;
+  max-width: 60vw;
 }
 
 main > section > header {
   margin: 3em auto 3em auto;
-  max-width: 51vw;
+  max-width: 60vw;
 }
 
 main > section > header > h1 {
