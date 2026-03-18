@@ -193,7 +193,7 @@ main section {
   flex-direction: column;
   margin: 3em auto auto auto;
   flex: inherit;
-  max-width: 30em;
+  max-width: 60em;
   align-items: center;
 }
 
@@ -201,14 +201,31 @@ main section h1 {
   font-family: var(--secondary-font-family);
 }
 
-.intro {
-  max-width: 60em;
+.list-grid {
+  display: grid;
+  grid-template-columns: 17vw 17vw;
+  gap: 1em 1em;
 }
 
-.list-grid {
-  display: flex;
-  flex-direction: row;
-}
+/* @media only screen and (max-width: 600px) { */
+/*   .list-grid { */
+/*     text-align: center; */
+/*     max-width: 100%; */
+/*   } */
+/**/
+/*   .list-grid header h2 { */
+/*     font-size: large; */
+/*   } */
+/**/
+/*   .list-grid { */
+/*     display: grid; */
+/*     grid-template-columns: none; */
+/*     grid-template-rows: 30vw 30vw 30vw 30vw; */
+/*     gap: 1em 1em; */
+/*     align-items: center; */
+/*     justify-content: center; */
+/*   } */
+/* } */
 
 main section a:link,
 a:visited {
