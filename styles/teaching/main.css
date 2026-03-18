@@ -1,0 +1,283 @@
+:root {
+  /* Base Theme */
+  --bg: #fffcf5;
+  --fg: #54433a;
+
+  --primary: #6d9481;
+  --secondary: #91ac84;
+  --tertiary: #8aa38b;
+  --comment: #7d6658;
+  --ui: #a59f94;
+  --card-fg: #fffcf5;
+  --card-border: #faf4ed;
+
+  /* Fonts */
+  --primary-font-family: "Zen Kaku Gothic New", sans-serif;
+  --secondary-font-family: "Syne Mono", monospace;
+  --tertiary-font-family: "Roboto Mono", monospace;
+}
+:root.dark {
+  /* Dark Theme */
+  --bg: #292522;
+  --fg: #ece1d7;
+
+  --primary: #dcafc5;
+  --secondary: #f6c1c3;
+  --tertiary: #f4d1e2;
+  --comment: #c1a78e;
+  --card-fg: #54433a;
+  --card-border: #ece1d7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(100%);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+html,
+body {
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--bg);
+  color: var(--fg);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  margin: 3em auto 0em auto;
+}
+
+.main-header nav {
+  display: flex;
+  flex: initial;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 51vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-header {
+    margin: 3em auto auto auto;
+  }
+
+  .main-header nav {
+    min-width: 71vw;
+  }
+}
+
+#theme-btn {
+  z-index: 2;
+  background: none;
+  border: none;
+  margin-right: 3em;
+}
+
+#theme-icon {
+  font-size: xxx-large;
+  color: #54433a;
+}
+
+.main-header nav button i:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+  #theme-btn {
+    margin-right: 1em;
+  }
+}
+
+.nav-container {
+  margin-left: 3em;
+}
+
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  list-style: none;
+  padding: 0;
+}
+
+#nav-links li {
+  z-index: 2;
+}
+
+#nav-links a {
+  font-family: var(--secondary-font-family);
+  font-size: x-large;
+  font-weight: bold;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+#nav-links a:hover {
+  color: var(--primary);
+}
+
+#menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1em;
+    margin-left: 1em;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5em;
+  }
+
+  #nav-links a {
+    font-size: large;
+  }
+
+  #menu-icon {
+    display: block;
+    position: relative;
+    z-index: 2;
+    font-size: xx-large;
+    color: #54433a;
+  }
+
+  .nav-container img:hover {
+    transform: scale(1.1);
+  }
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5em 5em;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    flex-flow: column wrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  flex: inherit;
+  max-width: 60em;
+  align-items: center;
+}
+
+.intro h1 {
+  font-family: var(--secondary-font-family);
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  margin: 3em auto auto auto;
+  flex: inherit;
+  max-width: 30em;
+  align-items: center;
+}
+
+.slides h1 {
+  font-family: var(--secondary-font-family);
+}
+
+.slides a:link,
+a:visited {
+  color: var(--fg);
+}
+
+.slides a:hover,
+a:active {
+  color: var(--tertiary);
+}
+
+@media (max-width: 600px) {
+  .slides {
+    font-size: small;
+  }
+
+  .slides h1 {
+    text-align: center;
+    font-size: xx-large;
+  }
+}
+
+.profile-picture {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-picture {
+    max-height: 300px;
+    max-width: 300px;
+  }
+}
+
+.korok-text {
+  display: inline-flex;
+  cursor: url("../static/images/characters/Elma.png"), pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3em;
+}
+
+.footer-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-buttons li {
+  z-index: 2;
+}
+
+.footer-buttons img {
+  width: 3em;
+  height: 3em;
+}
+
+.footer-buttons img:hover {
+  transform: scale(1.2);
+}
